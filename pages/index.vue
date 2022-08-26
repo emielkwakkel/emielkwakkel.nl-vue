@@ -10,7 +10,7 @@
           <div>
             <p>
               <img
-                src="~/assets/emiel-kwakkel.png"
+                src="~/assets/emiel-kwakkel.jpg"
                 class="rounded-full inline sm:hidden w-3/5 2xl:w-4/5 text-center mb-10"
               />
             </p>
@@ -23,14 +23,14 @@
               for a <span class="text-green-500">greener world</span>
             </p>
             <button
-              class="bg-blue-300 text-gray-800 font-bold rounded-full my-6 py-4 px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+              class="hidden bg-blue-300 text-gray-800 font-bold rounded-full my-6 py-4 px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
             >
               Blog on Sustainable IT
             </button>
           </div>
         </div>
         <div class="hidden sm:flex flex-col w-2/5 2xl:w-1/5 justify-center">
-          <img src="~/assets/emiel-kwakkel.png" class="rounded-full" />
+          <img src="~/assets/emiel-kwakkel.jpg" class="rounded-full" />
         </div>
       </div>
 
