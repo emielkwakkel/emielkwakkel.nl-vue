@@ -1,11 +1,11 @@
 ---
-title: "Sustainable Frontend Development"
-description: "How to make the right choices."
+title: "Comparing Frameworks"
+description: "Angular vs React vs Vue"
 draft: true
 head:
   meta:
     - name: "keywords"
-      content: "sustainability"
+      content: "angular, react, vue"
     - name: "robots"
       content: "index, follow"
     - name: "author"
