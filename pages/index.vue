@@ -31,55 +31,33 @@
         <img src="~/assets/emiel-kwakkel.jpg" class="rounded-full" />
       </aside>
     </section>
-
-    <section class="w-full pt-20 pb-20 bg-gray-700">
-      <header>
-        <h2
-          class="leading-normal mb-2 text-green-500 text-3xl font-bold text-center"
+    <Section>
+      <template v-slot:header>Upcoming Events</template>
+      <Event v-for="event in events" :key="event.name" :event="event" />
+    </Section>
+    <Section :isdark="true">
+      <template v-slot:header>Latest Blogs</template>
+      <ContentList path="/blog" v-slot="{ list }">
+        <div
+          v-for="article in list"
+          :key="article._path"
+          class="w-full rounded bg-gray-700 h-64 mb-3 sm:mr-3 p-5"
         >
-          Upcoming Events
-        </h2>
-      </header>
-      <div
-        class="container mx-auto sm:flex w-full px-3 text-gray-200 p-3 pb-10"
-      >
-        <Event v-for="event in events" :key="event.name" :event="event" />
-      </div>
-    </section>
-
-    <section class="w-full pt-20 pb-20 bg-gray-900">
-      <header>
-        <h2
-          class="leading-normal mb-2 text-green-500 text-3xl font-bold text-center"
-        >
-          Latest Blogs
-        </h2>
-      </header>
-      <div
-        class="container mx-auto sm:flex w-full px-3 text-gray-200 p-3 pb-10"
-      >
-        <ContentList path="/blog" v-slot="{ list }">
-          <div
-            v-for="article in list"
-            :key="article._path"
-            class="w-full rounded bg-gray-700 h-64 mb-3 sm:mr-3 p-5"
-          >
-            <h2 class="leading-normal mb-2 text-green-500 text-3xl font-bold">
-              {{ article.title }}
-            </h2>
-            <p>{{ article.description }}</p>
-            <p class="mt-6">
-              <a
-                :href="article._path"
-                class="bg-gray-900 font-bold rounded-full mt-12 py-4 px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-              >
-                Read more
-              </a>
-            </p>
-          </div>
-        </ContentList>
-      </div>
-    </section>
+          <h2 class="leading-normal mb-2 text-green-500 text-3xl font-bold">
+            {{ article.title }}
+          </h2>
+          <p>{{ article.description }}</p>
+          <p class="mt-6">
+            <a
+              :href="article._path"
+              class="bg-gray-900 font-bold rounded-full mt-12 py-4 px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            >
+              Read more
+            </a>
+          </p>
+        </div>
+      </ContentList>
+    </Section>
   </div>
 </template>
 
