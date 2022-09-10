@@ -14,6 +14,6 @@ head:
       content: "© 2022 Emiel Kwakkel"
 ---
 
-# Sustainable Frontend Development
+## How to make the right choices
 
 Content
