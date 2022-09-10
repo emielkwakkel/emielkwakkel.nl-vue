@@ -12,7 +12,7 @@
     <a
       v-if="event.link"
       :href="event.link.href"
-      class="bg-blue-300 text-gray-800 font-bold rounded-full mt-6 py-4 px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+      class="bg-gray-700 text-white font-bold rounded-full mt-6 py-4 px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
     >
       {{ event.link.title }}
     </a>
