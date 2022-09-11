@@ -35,7 +35,7 @@
       <template v-slot:header>Upcoming Events</template>
       <Event v-for="event in events" :key="event.name" :event="event" />
     </Section>
-    <Section :isdark="true">
+    <Section isdark="true">
       <template v-slot:header>Latest Blogs</template>
       <ContentList path="/blog" v-slot="{ list }">
         <div
