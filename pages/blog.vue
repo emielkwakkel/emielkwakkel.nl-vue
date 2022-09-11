@@ -36,5 +36,10 @@
 <script>
 export default {
   name: "BlogPage",
+  head() {
+    return {
+      title: "Emiel Kwakkel - Blogs",
+    };
+  },
 };
 </script>

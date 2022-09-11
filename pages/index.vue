@@ -81,6 +81,11 @@ const events = [
 
 export default {
   name: "IndexPage",
+  head() {
+    return {
+      title: "Emiel Kwakkel - Sustainable IT",
+    };
+  },
   data() {
     return { events };
   },
