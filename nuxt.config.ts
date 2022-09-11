@@ -13,10 +13,19 @@ export default defineNuxtConfig({
     head: {
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { property: "og:image", content: "/og-image.jpg" },
-        { property: "og:image:url", content: "/og-image.jpg" },
+        {
+          property: "og:image",
+          content: "https://emielkwakkel.nl/og-image.jpg",
+        },
+        {
+          property: "og:image:url",
+          content: "https://emielkwakkel.nl/og-image.jpg",
+        },
         { property: "og:image:alt", content: "Website of Emiel Kwakkel" },
-        { property: "twitter:image", content: "/og-image.jpg" },
+        {
+          property: "twitter:image",
+          content: "https://emielkwakkel.nl/og-image.jpg",
+        },
         {
           property: "og:description",
           content:
