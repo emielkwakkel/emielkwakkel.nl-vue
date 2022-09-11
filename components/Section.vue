@@ -18,6 +18,6 @@
 
 <script setup lang="ts">
 defineProps<{
-  isdark: Boolean;
+  isdark?: Boolean;
 }>();
 </script>
