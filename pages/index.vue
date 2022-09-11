@@ -84,6 +84,8 @@ export default {
   head() {
     return {
       title: "Emiel Kwakkel - Sustainable IT",
+      description:
+        "My mission is to promote Sustainable IT for a greener world",
     };
   },
   data() {

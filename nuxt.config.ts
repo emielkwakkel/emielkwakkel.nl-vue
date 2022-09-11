@@ -14,6 +14,14 @@ export default defineNuxtConfig({
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { property: "og:image", content: "/og-image.jpg" },
+        { property: "og:image:url", content: "/og-image.jpg" },
+        { property: "og:image:alt", content: "Website of Emiel Kwakkel" },
+        { property: "twitter:image", content: "/og-image.jpg" },
+        {
+          property: "og:description",
+          content:
+            "My mission is to promote Sustainable IT for a greener world",
+        },
       ],
       link: [{ rel: "icon", type: "image/ico", href: "/favicon.ico" }],
     },
