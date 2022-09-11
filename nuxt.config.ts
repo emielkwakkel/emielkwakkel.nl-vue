@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     head: {
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { property: "og:image", content: "/og-image.jpg" },
       ],
       link: [{ rel: "icon", type: "image/ico", href: "/favicon.ico" }],
     },
