@@ -9,4 +9,12 @@ export default defineNuxtConfig({
       postcssOptions: require("./postcss.config.js"),
     },
   },
+  app: {
+    head: {
+      meta: [
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+      ],
+      link: [{ rel: "icon", type: "image/ico", href: "/favicon.ico" }],
+    },
+  },
 });
