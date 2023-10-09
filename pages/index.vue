@@ -82,11 +82,6 @@ const events = [
     },
   },
   {
-    name: "ING",
-    date: "September 29th, 2022",
-    title: "Quality Engineering for Sustainability",
-  },
-  {
     name: "QXDay 2022",
     date: "November 6th, 2022",
     title: "Quality Engineering for Sustainability",
