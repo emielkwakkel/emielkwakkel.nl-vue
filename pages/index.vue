@@ -32,7 +32,7 @@
       </aside>
     </section>
     <Section>
-      <template v-slot:header>Upcoming Events</template>
+      <template v-slot:header>Events</template>
       <Event v-for="event in events" :key="event.name" :event="event" />
     </Section>
     <Section isdark="true">
@@ -64,17 +64,35 @@
 <script>
 const events = [
   {
+    name: "FrontMania",
+    date: "October 12th, 2023",
+    title: "Holistic Approach to Sustainable IT",
+    link: {
+      href: "https://frontmania.com/",
+      title: "Visit",
+    },
+  },
+  {
+    name: "QXDay 2023",
+    date: "September 19th, 2023",
+    title: "Holistic Approach to Sustainable IT",
+    link: {
+      href: "https://www.sogeti.nl/events/qxday2023",
+      title: "Watch",
+    },
+  },
+  {
     name: "ING",
     date: "September 29th, 2022",
     title: "Quality Engineering for Sustainability",
   },
   {
-    name: "QXDay",
+    name: "QXDay 2022",
     date: "November 6th, 2022",
     title: "Quality Engineering for Sustainability",
     link: {
-      href: "https://www.qxday2022.nl/",
-      title: "Sign up",
+      href: "https://www.sogeti.nl/events/QXDay2022",
+      title: "Watch",
     },
   },
 ];
