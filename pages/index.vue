@@ -29,7 +29,7 @@
         </p>
       </section>
       <aside class="hidden sm:flex flex-col w-2/5 2xl:w-1/5 justify-center">
-        <img src="~/assets/emiel-kwakkel.jpg" class="rounded-full" />
+        <img src="~/assets/emiel-kwakkel.jpg" alt="Emiel Kwakkel" class="rounded-full" />
       </aside>
     </section>
     <Section>
