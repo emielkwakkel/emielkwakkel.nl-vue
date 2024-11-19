@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-900">
-    <Nav>
+    <Nav aria-label="Navigate up">
       <Link />
     </Nav>
     <section
