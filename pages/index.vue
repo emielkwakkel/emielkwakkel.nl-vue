@@ -64,30 +64,30 @@
 <script>
 const events = [
   {
+    name: "SNiC SustainabilIT",
+    date: "November 27th, 2024",
+    title: "The Hidden Impact of Developers",
+    link: {
+      href: "https://sustainabilit.snic.nl/",
+      title: "Join",
+    },
+  },
+  {
+    name: "Frontend Lightning Talks",
+    date: "November 20th, 2024",
+    title: "The Hidden Impact of Developers",
+    link: {
+      href: "https://www.meetup.com/sogeti-frontend/events/302998087/",
+      title: "Join",
+    },
+  },
+  {
     name: "FrontMania",
     date: "October 12th, 2023",
     title: "Holistic Approach to Sustainable IT",
     link: {
       href: "https://frontmania.com/",
       title: "Visit",
-    },
-  },
-  {
-    name: "QXDay 2023",
-    date: "September 19th, 2023",
-    title: "Holistic Approach to Sustainable IT",
-    link: {
-      href: "https://www.sogeti.nl/events/qxday2023",
-      title: "Watch",
-    },
-  },
-  {
-    name: "QXDay 2022",
-    date: "November 6th, 2022",
-    title: "Quality Engineering for Sustainability",
-    link: {
-      href: "https://www.sogeti.nl/events/QXDay2022",
-      title: "Watch",
     },
   },
 ];

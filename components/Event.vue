@@ -3,7 +3,7 @@
     <h3 class="leading-loose mb-2 text-green-500 font-bold">
       <span class="text-2xl">{{ event.name }}</span>
       <span class="text-1xl text-gray-200 font-normal">
-        | {{ event.date }}</span
+        <br>{{ event.date }}</span
       >
     </h3>
     <h4 class=" sm:pt-3 text-2xl mb-8">
