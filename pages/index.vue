@@ -7,6 +7,7 @@
         <p>
           <img
             src="~/assets/emiel-kwakkel.jpg"
+            alt="Emiel Kwakkel"
             class="rounded-full inline sm:hidden w-3/5 2xl:w-4/5 text-center mb-10"
           />
         </p>
