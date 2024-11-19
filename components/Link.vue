@@ -5,7 +5,6 @@
   >
     <slot> &lt; Home </slot>
   </NuxtLink>
-  <a href="/"></a>
 </template>
 
 <script setup lang="ts">
