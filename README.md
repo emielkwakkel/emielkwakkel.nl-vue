@@ -11,3 +11,11 @@ npm install
 ```
 
 All common commands are collected in the package.json scripts.
+
+## Analyse static source bundles
+
+Use the following bash script to generate an overview of all the generated JavaScript source files:
+
+```bash
+npx nuxi analyze
+```
