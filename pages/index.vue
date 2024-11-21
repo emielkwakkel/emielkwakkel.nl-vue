@@ -78,8 +78,8 @@ const events = [
     date: "November 20th, 2024",
     title: "The Hidden Impact of Developers",
     link: {
-      href: "https://www.meetup.com/sogeti-frontend/events/302998087/",
-      title: "Join",
+      href: "https://www.youtube.com/watch?v=rauhrV5EfVE",
+      title: "Watch recording on Youtube",
     },
   },
   {
