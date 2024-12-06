@@ -1,13 +1,12 @@
-import { defineNuxtConfig } from "nuxt";
-
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: ["@nuxt/content"],
   css: ["~/assets/css/styles.css"],
-  build: {
-    postcss: {
-      postcssOptions: require("./postcss.config.js"),
-    },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    }
   },
   app: {
     head: {
@@ -35,4 +34,6 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/ico", href: "/favicon.ico" }],
     },
   },
+
+  compatibilityDate: "2024-12-06",
 });
