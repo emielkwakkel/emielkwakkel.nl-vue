@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-900">
-    <Nav>
+    <Nav aria-label="Navigation header">
       <NavLink />
     </Nav>
     <section
@@ -19,7 +19,7 @@
         </ContentDoc>
       </article>
     </section>
-    <Nav>
+    <Nav aria-label="Navigation footer">
       <NavLink />
     </Nav>
   </div>
