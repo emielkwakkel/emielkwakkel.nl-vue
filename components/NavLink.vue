@@ -1,9 +1,24 @@
 <template>
   <NuxtLink
     :href="href"
-    class="bg-gray-900 text-white font-bold rounded-full my-6 py-4 px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+    class="my-6 py-4 px-8 text-white dark:bg-gray-900 bg-white hover:bg-gray-200 dark:hover:bg-gray-950 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2"
   >
-    <slot> &lt; Home </slot>
+    <svg
+      class="w-6 h-6 text-gray-800 dark:text-white"
+      aria-hidden="true"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 14 10"
+    >
+      <path
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M13 5H1m0 0 4 4M1 5l4-4"
+      />
+    </svg>
+    <span class="sr-only">Navigate</span>
   </NuxtLink>
 </template>
 

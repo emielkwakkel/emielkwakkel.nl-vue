@@ -1,6 +1,8 @@
 <template>
-  <div class="bg-gray-900">
-    <section class="flex container h-screen px-3 text-gray-200 mx-auto">
+  <div class="dark:bg-gray-900 bg-white">
+    <section
+      class="flex container h-screen px-3 dark:text-gray-200 text-grey-900 mx-auto"
+    >
       <section
         class="flex flex-col w-full sm:w-3/5 justify-center text-center md:text-left"
       >
@@ -47,13 +49,13 @@
       <template v-slot:header>{{ $t("pages.home.events") }}</template>
       <Event v-for="event in events" :key="event.name" :event="event" />
     </Section>
-    <Section isdark="true">
+    <Section>
       <template v-slot:header>{{ $t("pages.home.latest-blogs") }}</template>
       <ContentList :path="`/${locale}/blog`" v-slot="{ list }">
         <div
           v-for="article in list"
           :key="article._path"
-          class="w-full rounded bg-gray-700 h-64 mb-3 sm:mr-3 p-5"
+          class="w-full rounded dark:bg-gray-950 bg-gray-200 h-64 mb-3 sm:mr-3 p-5"
         >
           <h2 class="leading-normal mb-2 text-green-500 text-3xl font-bold">
             {{ article.title }}
@@ -62,7 +64,7 @@
           <p class="mt-6">
             <a
               :href="article._path"
-              class="bg-gray-900 font-bold rounded-full mt-12 py-4 px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+              class="dark:bg-gray-900 bg-white font-bold rounded-full mt-12 py-4 px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
             >
               {{ $t("generic.readmore") }}
             </a>

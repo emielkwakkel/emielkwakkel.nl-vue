@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-blue-300">
+  <nav class="dark:bg-gray-950 bg-gray-100">
     <p class="flex container mx-auto px-2">
       <slot></slot>
     </p>

@@ -1,7 +1,9 @@
 <template>
-  <div class="bg-gray-900">
+  <div class="dark:bg-gray-900 bg-white">
     <div>
-      <header class="flex container px-3 bg-gray-900 text-gray-200 mx-auto">
+      <header
+        class="flex container px-3 dark:bg-gray-900 bg-white text-gray-200 mx-auto"
+      >
         <div
           class="flex flex-col w-full justify-center text-center md:text-left"
         >
@@ -11,7 +13,7 @@
         </div>
       </header>
 
-      <section class="w-full pt-20 pb-20 bg-gray-700">
+      <section class="w-full pt-20 pb-20 bg-gray-950">
         <div
           class="container mx-auto sm:flex w-full px-3 text-gray-200 p-3 pb-10"
         >
@@ -19,7 +21,7 @@
             <article
               v-for="article in list"
               :key="article._path"
-              class="w-full rounded bg-gray-900 h-64 mb-3 sm:mr-3 p-5"
+              class="w-full rounded dark:bg-gray-900 bg-white h-64 mb-3 sm:mr-3 p-5"
             >
               <h2 class="leading-normal mb-2 text-green-500 text-3xl font-bold">
                 {{ article.title }}
