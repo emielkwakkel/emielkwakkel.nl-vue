@@ -1,8 +1,6 @@
 <template>
   <div class="dark:bg-gray-900 bg-white bg-white">
-    <Nav aria-label="Navigation header">
-      <NavLink />
-    </Nav>
+    <Breadcrumb :links="links"></Breadcrumb>
     <section
       class="flex container h-full px-3 dark:bg-gray-900 bg-white dark:text-gray-200 text-grey-900 mx-auto mb-20"
     >
@@ -19,8 +17,28 @@
         </ContentDoc>
       </article>
     </section>
-    <Nav aria-label="Navigation footer">
-      <NavLink />
-    </Nav>
+    <Breadcrumb :links="links"></Breadcrumb>
   </div>
 </template>
+
+<script setup lang="ts">
+const { locale } = useI18n();
+const route = useRoute();
+const { data } = await useAsyncData("currentPageContent", () =>
+  queryContent(route.path).findOne(),
+);
+
+const links = [
+  {
+    label: "Home",
+    to: `/${locale.value}`,
+  },
+  {
+    label: "Blog",
+    to: `/${locale.value}/blog`,
+  },
+  {
+    label: data.value?.title || "Article",
+  },
+];
+</script>

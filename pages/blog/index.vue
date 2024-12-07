@@ -1,5 +1,6 @@
 <template>
   <div class="dark:bg-gray-900 bg-white">
+    <Breadcrumb :links="links"></Breadcrumb>
     <div>
       <header
         class="flex container px-3 dark:bg-gray-900 bg-white text-gray-200 mx-auto"
@@ -35,9 +36,21 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const { locale } = useI18n();
+
 useHead({
   title: "Emiel Kwakkel - Blogs",
 });
+
+const links = [
+  {
+    label: "Home",
+    to: `/${locale.value}`,
+  },
+  {
+    label: "Blog",
+    to: `/${locale.value}/blog`,
+  },
+];
 </script>
