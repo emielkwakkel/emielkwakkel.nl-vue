@@ -17,6 +17,9 @@ jobs:
           script: |
             export NVM_DIR=~/.nvm
             source ~/.nvm/nvm.sh
+            nvm use 22.12.0
+            node -v
+            npm -v
             cd ./git
             git pull
             npm install
