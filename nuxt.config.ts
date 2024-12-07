@@ -6,15 +6,16 @@ export default defineNuxtConfig({
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
-    }
+    },
   },
   i18n: {
-    strategy: 'prefix',
-    defaultLocale: 'en',
+    strategy: "prefix",
+    defaultLocale: "en",
     locales: [
-      { code: 'en', iso: 'en-US', file: 'en-US.json', name: 'English' },
-      { code: 'nl', iso: 'nl-NL', file: 'nl-NL.json', name: 'Dutch' },
+      { code: "en", iso: "en-US", file: "en-US.json", name: "English" },
+      { code: "nl", iso: "nl-NL", file: "nl-NL.json", name: "Dutch" },
     ],
+    lazy: true,
   },
   app: {
     head: {
