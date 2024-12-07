@@ -1,12 +1,20 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", "@nuxtjs/i18n"],
   css: ["~/assets/css/styles.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     }
+  },
+  i18n: {
+    strategy: 'prefix',
+    defaultLocale: 'en',
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en-US.json', name: 'English' },
+      { code: 'nl', iso: 'nl-NL', file: 'nl-NL.json', name: 'Dutch' },
+    ],
   },
   app: {
     head: {

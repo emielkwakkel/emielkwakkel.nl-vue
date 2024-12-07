@@ -1,0 +1,24 @@
+{
+    "pages": {
+        "home": {
+            "latest-blogs": "Latest Blogs",
+            "sustainable-it-blog": "Blog on Sustainable IT",
+            "events": "Events",
+            "introduction": {
+                "line1": "Hi, I am Emiel Kwakkel,",
+                "line2": "My mission is to promote",
+                "line3": "Sustainable IT",
+                "line4a": "for a",
+                "line4b": "greener world"
+            }
+        }
+    },
+    "generic": {
+        "readmore": "Read more",
+        "language": {
+            "change": "Change language",
+            "english": "English",
+            "dutch": "Dutch"
+        }
+    }
+}

@@ -15,7 +15,7 @@
         <div
           class="container mx-auto sm:flex w-full px-3 text-gray-200 p-3 pb-10"
         >
-          <ContentList path="/blog" v-slot="{ list }">
+          <ContentList :path="`/${locale}/blog`" v-slot="{ list }">
             <article
               v-for="article in list"
               :key="article._path"
@@ -33,13 +33,9 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "BlogPage",
-  head() {
-    return {
-      title: "Emiel Kwakkel - Blogs",
-    };
-  },
-};
+<script setup>
+  const { locale } = useI18n();
+  useHead({
+    title: "Emiel Kwakkel - Blogs",
+  });
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-900">
     <Nav>
-      <Link />
+      <NavLink />
     </Nav>
     <section
       class="flex container h-full px-3 bg-gray-900 text-gray-200 mx-auto mb-20"
@@ -20,7 +20,7 @@
       </article>
     </section>
     <Nav>
-      <Link />
+      <NavLink />
     </Nav>
   </div>
 </template>
