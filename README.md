@@ -1,6 +1,7 @@
 # Emielkwakkel.nl
 
 Build with [nuxt 3](https://v3.nuxtjs.org) and optimized for sustainability.
+Replaced [old website](https://github.com/emielkwakkel/emielkwakkel.nl).
 
 ## Setup
 
