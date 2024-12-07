@@ -34,8 +34,8 @@
 </template>
 
 <script setup>
-  const { locale } = useI18n();
-  useHead({
-    title: "Emiel Kwakkel - Blogs",
-  });
+const { locale } = useI18n();
+useHead({
+  title: "Emiel Kwakkel - Blogs",
+});
 </script>

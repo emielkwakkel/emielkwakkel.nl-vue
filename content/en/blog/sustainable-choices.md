@@ -41,6 +41,7 @@ Source: [Wholegrain Digital](https://www.wholegraindigital.com/blog/dark-colour-
 With the new website live, it was time for another scan with websitecarbon.com. The five grams of CO2 per page view has been reduced to 0.06 grams, and 10,000 page views now equate to a car trip of just 112 kilometers! Thanks to the reduced bundle size combined with Static Site Generation, load times have improved. The GitHub workflow deploys the site to production in one minute, and server costs have decreased by 500%.
 
 ## New challenges
+
 As the scale of the project increases, so do the challenges. On the development side, the number of tests grows rapidly. Combined with additional quality gates, linting, and more extensive deployment scripting, pipeline lead times increase. Both a micro-frontend and monorepository architecture can help here. The goal is to automate the impact assessment of a change. Based on the dependency tree, only the tests, builds, and deployments affected by the change are executed.
 
 An example of such an approach is the KickstartGreen application, built for a fictional bank that helps clients plant trees alongside banking. The architecture is described as an Angular monorepository with NX, divided into projects following Manfred Steyer’s Domain-Driven Design principles. This setup allows for zooming in on the application, domain, and library levels. An affected analysis highlights the libraries within the application impacted by a change.
@@ -50,6 +51,7 @@ An example of such an approach is the KickstartGreen application, built for a fi
 When splitting the application into domains and libraries, careful thought is required about hierarchy. Dependencies should only flow downward. For instance, if a utility library imports an application, any change to that utility would mark the entire application and all its packages as affected.
 
 ## Final thoughts
+
 The list of possible optimizations is too long for this article. Ultimately, raising awareness and making sustainability a hard requirement is the only way to make balanced and measurable choices. Does your organization lack strict sustainability goals? Then consider how a sustainable proposal can also save costs, improve maintainability, or shorten time-to-market. A win-win!
 
 All projects mentioned in this article are available on my [personal GitHub](https://github.com/emielkwakkel).

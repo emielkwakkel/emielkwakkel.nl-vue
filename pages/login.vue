@@ -1,20 +1,20 @@
 <template>
   <div class="bg-gray-900">
-    <Nav aria-label="Navigate up">
+    <Nav aria-label="Navigation header">
       <Link />
     </Nav>
     <section
       class="flex container h-full px-3 bg-gray-900 text-gray-200 mx-auto mb-20"
     >
       <article class="flex flex-col w-full">
-          <header>
-            <h1
-              class="leading-normal mb-2 mt-12 text-green-500 text-5xl font-bold"
-            >
-              Login
-            </h1>
-          </header>
-          <form @submit.prevent="submitForm" class="flex flex-col">
+        <header>
+          <h1
+            class="leading-normal mb-2 mt-12 text-green-500 text-5xl font-bold"
+          >
+            Login
+          </h1>
+        </header>
+        <form @submit.prevent="submitForm" class="flex flex-col">
           <label class="flex-col">
             Username
             <input
@@ -38,38 +38,40 @@
             class="bg-blue-300 text-gray-800 font-bold rounded-full my-6 py-4 px-8 focus:outline-none"
             @click.prevent="submitForm"
           >
-            {{ isLoading ? 'Loading...' : 'Submit' }}
+            {{ isLoading ? "Loading..." : "Submit" }}
           </button>
         </form>
       </article>
     </section>
-    <Nav>
+    <Nav aria-label="Navigation footer">
       <Link />
     </Nav>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from "vue";
 
 const formData = ref({
-    username: '',
-    password: '',
-})
+  username: "",
+  password: "",
+});
 const isLoading = ref(false);
 
-const submitForm = async() => {
-    const { data: responseData } = await useFetch('https://api2.watttime.org/v2/login', {
-        method: 'post',
-        headers: {
-            Accept: '*/*'
-        },
-        body: { 
-          name: formData.value.username,
-          email: formData.value.password,
-        }
-    })
-    console.log(responseData)
-}
-
+const submitForm = async () => {
+  const { data: responseData } = await useFetch(
+    "https://api2.watttime.org/v2/login",
+    {
+      method: "post",
+      headers: {
+        Accept: "*/*",
+      },
+      body: {
+        name: formData.value.username,
+        email: formData.value.password,
+      },
+    },
+  );
+  console.log(responseData);
+};
 </script>
