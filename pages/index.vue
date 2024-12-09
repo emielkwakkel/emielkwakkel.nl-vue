@@ -1,7 +1,7 @@
 <template>
   <div class="dark:bg-gray-900 bg-white">
     <section
-      class="flex container h-screen px-3 dark:text-gray-200 text-grey-900 mx-auto"
+      class="flex container h-screen px-3 dark:text-gray-200 text-grey-900 mx-auto lg:p-20"
     >
       <section
         class="flex flex-col w-full sm:w-3/5 justify-center text-center md:text-left"
@@ -10,7 +10,7 @@
           <img
             src="~/assets/emiel-kwakkel.jpg"
             alt="Emiel Kwakkel"
-            class="rounded-full inline sm:hidden w-3/5 2xl:w-4/5 text-center mb-10"
+            class="rounded-full inline sm:hidden w-3/5 text-center mb-10"
           />
         </p>
         <p class="leading-loose text-1xl">
@@ -37,7 +37,7 @@
           </a>
         </p>
       </section>
-      <aside class="hidden sm:flex flex-col w-2/5 2xl:w-1/5 justify-center">
+      <aside class="hidden sm:flex flex-col w-2/5 justify-center">
         <img
           src="~/assets/emiel-kwakkel.jpg"
           alt="Emiel Kwakkel"
