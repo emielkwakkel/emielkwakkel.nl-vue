@@ -1,8 +1,8 @@
 <template>
   <div
-    class="w-full rounded-lg dark:bg-gray-900 bg-gray-200 md:h-96 xl:h-80 2xl:h-64 mb-3 sm:mr-3 p-5"
+    class="w-full rounded-lg dark:bg-gray-900 bg-gray-200 dark:text-white mb-3 sm:mr-3 p-5 pb-8"
   >
-    <h3 class="leading-loose mb-2">
+    <h3 class="leading-loose mb-2 sm:h-40 md:h-20 lg:h-14 xl:h-14">
       <span class="text-2xl font-bold text-green-500">{{ event.name }}</span>
       <span class="text-1xl font-normal"> <br />{{ event.date }}</span>
     </h3>
@@ -12,7 +12,7 @@
     <a
       v-if="event.link"
       :href="event.link.href"
-      class="dark:bg-gray-950 bg-white dark:text-white font-bold rounded-full mt-6 py-4 px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+      class="dark:bg-gray-950 bg-white font-bold rounded-full py-4 px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
     >
       {{ event.link.title }}
     </a>

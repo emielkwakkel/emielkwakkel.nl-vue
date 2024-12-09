@@ -1,8 +1,8 @@
 <template>
-  <section class="w-full pt-20 pb-20 dark:bg-gray-900 bg-gray-100">
+  <section class="w-full pt-20 pb-20 dark:bg-gray-950 bg-gray-100">
     <header>
       <h2
-        class="leading-normal mb-2 text-green-500 text-3xl font-bold text-center"
+        class="leading-normal mb-2 dark:text-white text-gray-900 text-4xl text-center"
       >
         <slot name="header"></slot>
       </h2>

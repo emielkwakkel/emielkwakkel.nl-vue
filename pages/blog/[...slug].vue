@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:bg-gray-900 bg-white bg-white">
+  <div class="min-h-screen dark:bg-gray-900 bg-white bg-white">
     <Breadcrumb :links="links"></Breadcrumb>
     <section
       class="flex container h-full px-3 dark:bg-gray-900 bg-white dark:text-gray-200 text-grey-900 mx-auto mb-20"
@@ -17,7 +17,6 @@
         </ContentDoc>
       </article>
     </section>
-    <Breadcrumb :links="links"></Breadcrumb>
   </div>
 </template>
 
