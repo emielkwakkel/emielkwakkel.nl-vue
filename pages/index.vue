@@ -71,7 +71,7 @@
 </template>
 
 <script setup>
-const { locale, setLocale } = useI18n();
+const { t, locale, setLocale } = useI18n();
 
 const events = [
   {
@@ -80,7 +80,7 @@ const events = [
     title: "The Hidden Impact of Developers",
     link: {
       href: "https://sustainabilit.snic.nl/",
-      title: "Join",
+      title: t("events.actions.more-information"),
     },
   },
   {
@@ -89,7 +89,7 @@ const events = [
     title: "The Hidden Impact of Developers",
     link: {
       href: "https://www.youtube.com/watch?v=rauhrV5EfVE",
-      title: "Watch recording",
+      title: t("events.actions.watch-recording"),
     },
   },
   {
@@ -98,7 +98,7 @@ const events = [
     title: "Holistic Approach to Sustainable IT",
     link: {
       href: "https://frontmania.com/",
-      title: "Visit",
+      title: t("events.actions.more-information"),
     },
   },
 ];

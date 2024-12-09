@@ -20,5 +20,14 @@
             "english": "English",
             "dutch": "Dutch"
         }
+    },
+    "blogs": {
+        "readmore": "Read more"
+    },
+    "events": {
+        "actions": {
+            "more-information": "More information",
+            "watch-recording": "Watch recording"
+        }
     }
 }

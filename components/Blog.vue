@@ -12,7 +12,7 @@
         :href="article._path"
         class="dark:bg-gray-950 bg-white font-bold rounded-full py-4 px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
       >
-        {{ $t("generic.readmore") }}
+        {{ $t("blogs.readmore") }}
       </a>
     </p>
   </div>

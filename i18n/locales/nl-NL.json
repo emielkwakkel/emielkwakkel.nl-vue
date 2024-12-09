@@ -14,11 +14,19 @@
         }
     },
     "generic": {
-        "readmore": "Lees verder",
         "language": {
             "change": "Verander taal",
             "english": "Engels",
             "dutch": "Nederlands"
+        }
+    },
+    "blogs": {
+        "readmore": "Lees verder"
+    },
+    "events": {
+        "actions": {
+            "more-information": "Meer informatie",
+            "watch-recording": "Bekijk opname"
         }
     }
 }
