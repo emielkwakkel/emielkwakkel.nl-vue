@@ -1,6 +1,6 @@
 ---
 title: "Moving from Green IT to Sustainable IT"
-description: "Why Green IT is not enough and how to move forward"
+description: 'Sustainability is often defined as "meeting the needs of the present without compromising the ability of future generations to meet their own needs". This definition, from the 1987 UN report "Our Common Future", has stuck with me for a simple reason: it highlights the long-term responsibility we have in every decision we make.'
 date: 2024-12-11
 head:
   meta:
@@ -14,11 +14,11 @@ head:
       content: "© 2024 Emiel Kwakkel"
 ---
 
-Sustainability is often defined as "meeting the needs of the present without compromising the ability of future generations to meet their own needs". This definition, from the 1987 UN report _Our Common Future_, has stuck with me for a simple reason: it highlights the long-term responsibility we have in every decision we make.
+## Why Green IT is not enough and how to move forward
 
 When I think about sustainability, it’s not just an abstract concept. It’s about making sure that future generations—including my own kids—inherit a world where they can solve their problems without running out of resources. That’s why I’ve started to think more critically about Sustainable IT.
 
-### Green IT Isn’t the Finish Line
+## Green IT isn’t the finish line
 
 Green IT has been the starting point for many organizations. The focus is often on reducing carbon emissions through more energy-efficient hardware and software. For example, optimizing data center energy usage, or using cloud services in regions with renewable energy sources. This approach works—up to a point.
 
@@ -26,13 +26,13 @@ But Green IT can be a trap if it’s the only goal. Efficiency alone doesn’t g
 
 This paradox shows us that Green IT alone won’t solve the problem. Reducing emissions is good, but it’s not enough if the total impact continues to grow.
 
-### Thinking in Systems: From Sustainable to Circular
+## Thinking in systems: From Sustainable to Circular
 
 To move beyond Green IT, we need to focus on **Sustainable IT**. This means designing systems with a broader perspective—reducing waste, improving long-term efficiency, and rethinking how resources are consumed. It’s about balancing energy efficiency with the reduction of waste and the reuse of resources.
 
 Even better, we can aim for **Circular IT**. This approach adopts principles from the Circular Economy, emphasizing reuse, refurbishment, and recycling. For instance, instead of discarding outdated hardware, refurbishing and repurposing it can extend its lifecycle and reduce the demand for new materials. The same applies to software—building systems that are modular and maintainable makes them easier to adapt and extend rather than replace.
 
-### A Practical Shift
+## A practical shift
 
 Shifting from Green IT to Sustainable IT doesn’t happen overnight. It requires asking hard questions. Are we designing software and systems that genuinely reduce our long-term environmental impact? Are we prioritizing efficiency for its own sake, or are we looking at the bigger picture?
 
@@ -40,7 +40,7 @@ For example, when we scale up a service, are we using tools like Static Site Gen
 
 At the infrastructure level, examining our cloud setups is equally important. Can workloads be distributed in ways that optimize renewable energy use? Are we minimizing the number of resources running idle? These are practical, measurable steps that move us toward sustainability.
 
-### Learning from Mistakes
+# Learning from mistakes
 
 I’ve seen projects where the focus was solely on minimizing immediate emissions or achieving specific efficiency targets. While those goals could have been met, the broader impact wasn’t considered. In some cases, new features or scaling decisions wiped out any efficiency gains. Recognizing these patterns has been key to understanding why Green IT isn’t the finish line—it’s just one step on a longer journey.
 
