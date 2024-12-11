@@ -1,6 +1,6 @@
 ---
 title: "Angular, React of Vue?"
-description: "Het is tijd om de mindset te veranderen."
+description: 'Angular, React of Vue? De meest gestelde vraag binnen de front-end wereld, waar nog talloze blogs en vlogs over gemaakt zullen worden. De vragen "Welk framework moet ik leren?" en "Ben jij een Angular/Vue/React developer?" suggereren dat je als ontwikkelaar moet kiezen, of dat er via de opdracht waar je op zit voor je gekozen wordt. Het is tijd om die mindset te veranderen.'
 date: 2021-02-19
 head:
   meta:
@@ -14,7 +14,7 @@ head:
       content: "© 2024 Emiel Kwakkel"
 ---
 
-**Angular, React of Vue? De meest gestelde vraag binnen de front-end wereld, waar nog talloze blogs en vlogs over gemaakt zullen worden. De vragen "Welk framework moet ik leren?" en "Ben jij een Angular/Vue/React developer?" suggereren dat je als ontwikkelaar moet kiezen, of dat er via de opdracht waar je op zit voor je gekozen wordt. Het is tijd om die mindset te veranderen.**
+## Het is tijd om de mindset te veranderen.
 
 Ik zit in het Angular straatje, bij de meeste opdrachten heb ik voornamelijk met Angular gewerkt. Als trainer van AngularJS en Angular Fundamentals geef ik die kennis ook graag door. Toch zie ik mijzelf niet als Angular Developer. Het is "maar" een framework, het is 95% plain TypeScript, het is een toolkit die je helpt om te focussen op het bouwen van functionaliteit.
 

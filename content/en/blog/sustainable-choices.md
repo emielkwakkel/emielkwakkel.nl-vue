@@ -1,6 +1,6 @@
 ---
 title: "Sustainable Frontend Development"
-description: "How to make concious choices?"
+description: "There is an app for that! IT as the solution to every problem. This is the mindset that drives developers who live for making an impact to get up every day with fresh energy. When looking at sustainability, this leads to IT for Good, Green IT, and the all-encompassing Sustainable IT"
 date: 2022-09-10
 head:
   meta:
@@ -15,8 +15,6 @@ head:
 ---
 
 ## How to Make concious choices?
-
-**There is an app for that! IT as the solution to every problem. This is the mindset that drives developers who live for making an impact to get up every day with fresh energy. When looking at sustainability, this leads to IT for Good, Green IT, and the all-encompassing Sustainable IT.**
 
 At the same time, the energy consumption of digital technologies increases significantly every year. Decisions made during development are often unknowingly a major influence on energy consumption, CO2 emissions, and the use of scarce resources.
 

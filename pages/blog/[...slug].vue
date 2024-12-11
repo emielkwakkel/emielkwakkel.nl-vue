@@ -16,6 +16,9 @@
               <em>Published on {{ doc.date }}</em>
             </p>
           </header>
+          <p>
+            <strong>{{ doc.description }}</strong>
+          </p>
           <ContentRenderer :value="doc" />
         </ContentDoc>
       </article>

@@ -1,6 +1,6 @@
 ---
 title: "Deliver more value using Lerna"
-description: "How a monorepository driven architecture powered by Lerna can deliver more value."
+description: "Big organisations are increasing their efforts to adjust to demanding markets and focus on high quality customer journeys. In a time where startups, freed of collected technological complexity caused by years of iterative development, are disrupting the markets, organisations have to step up their game. By taking a modern approach time spent on maintaining the whole development environment and supporting tooling can be cut."
 date: 2018-10-15
 head:
   meta:
@@ -15,8 +15,6 @@ head:
 ---
 
 ## How a monorepository driven architecture powered by Lerna can deliver more value
-
-**Big organisations are increasing their efforts to adjust to demanding markets and focus on high quality customer journeys. In a time where startups, freed of collected technological complexity caused by years of iterative development, are disrupting the markets, organisations have to step up their game. By taking a modern approach time spent on maintaining the whole development environment and supporting tooling can be cut.**
 
 In this article I'll give you an in-depth frontend perspective on how a Lerna based monorepo will enable you to regain focus on delivering added value to your customers.
 

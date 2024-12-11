@@ -81,8 +81,8 @@ const sortedArticles = (list) => {
   if (!list) return [];
 
   return [...list]
-    .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort by date (descending)
-    .slice(0, 2); // Take the two latest articles
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 2);
 };
 
 const events = [

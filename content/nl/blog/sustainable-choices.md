@@ -1,6 +1,6 @@
 ---
 title: "Sustainable Frontend Development"
-description: "Hoe maak je de juiste keuzes?"
+description: "There is an app for that! IT als de oplossing voor elk probleem. Dat is de mindset waardoor developers die leven voor het maken van impact elke dag met frisse energie opstaan. Kijkend naar duurzaamheid kom je dan uit op IT for good, Green IT en het allesomvattende Sustainable IT."
 date: 2022-09-10
 head:
   meta:
@@ -15,8 +15,6 @@ head:
 ---
 
 ## Hoe maak je de juiste keuzes?
-
-**There is an app for that! IT als de oplossing voor elk probleem. Dat is de mindset waardoor developers die leven voor het maken van impact elke dag met frisse energie opstaan. Kijkend naar duurzaamheid kom je dan uit op IT for good, Green IT en het allesomvattende Sustainable IT.**
 
 Tegelijkertijd neemt jaarlijks het energieverbruik van digitale technologieën sterk toe. Keuzes die we tijdens het ontwikkelen maken blijken onbewust van grote invloed op het energieverbruik, de CO2 uitstoot en gebruik van schaarse grondstoffen.
 

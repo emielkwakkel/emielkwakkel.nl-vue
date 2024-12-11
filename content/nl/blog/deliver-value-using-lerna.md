@@ -1,6 +1,6 @@
 ---
-title: "Meer waarde leveren met Lerna"
-description: "Hoe een monorepository-gedreven architectuur met Lerna meer waarde kan leveren."
+title: "Meer waarde met Lerna"
+description: "Grote organisaties doen steeds meer moeite om zich aan te passen aan veeleisende markten en zich te richten op hoogwaardige klantreizen. In een tijd waarin startups, bevrijd van de technologische complexiteit die is opgebouwd door jaren van iteratieve ontwikkeling, markten verstoren, moeten organisaties zich verbeteren. Door een moderne aanpak kan de tijd die wordt besteed aan het onderhouden van de ontwikkelomgeving en ondersteunende tooling worden verminderd."
 date: 2018-10-15
 head:
   meta:
@@ -15,8 +15,6 @@ head:
 ---
 
 ## Hoe een monorepository-gedreven architectuur met Lerna meer waarde kan leveren
-
-**Grote organisaties doen steeds meer moeite om zich aan te passen aan veeleisende markten en zich te richten op hoogwaardige klantreizen. In een tijd waarin startups, bevrijd van de technologische complexiteit die is opgebouwd door jaren van iteratieve ontwikkeling, markten verstoren, moeten organisaties zich verbeteren. Door een moderne aanpak kan de tijd die wordt besteed aan het onderhouden van de ontwikkelomgeving en ondersteunende tooling worden verminderd.**
 
 In dit artikel geef ik je een diepgaand frontend-perspectief op hoe een Lerna-gebaseerde monorepository je in staat stelt om je weer te richten op het leveren van toegevoegde waarde aan je klanten.
 
