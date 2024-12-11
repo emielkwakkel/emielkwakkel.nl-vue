@@ -1,6 +1,7 @@
 ---
 title: "Sustainable Frontend Development"
 description: "Hoe maak je de juiste keuzes?"
+date: 2022-09-10
 head:
   meta:
     - name: "keywords"
@@ -10,7 +11,7 @@ head:
     - name: "author"
       content: "Emiel Kwakkel"
     - name: "copyright"
-      content: "© 2022 Emiel Kwakkel"
+      content: "© 2024 Emiel Kwakkel"
 ---
 
 ## Hoe maak je de juiste keuzes?

@@ -1,6 +1,7 @@
 ---
 title: "Deliver more value using Lerna"
 description: "How a monorepository driven architecture powered by Lerna can deliver more value."
+date: 2018-10-15
 head:
   meta:
     - name: "keywords"

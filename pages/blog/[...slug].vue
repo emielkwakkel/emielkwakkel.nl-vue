@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen dark:bg-gray-900 bg-white bg-white">
+  <div class="min-h-screen dark:bg-gray-900 pb-10 bg-white bg-white">
     <Breadcrumb :links="links"></Breadcrumb>
     <section
       class="flex container h-full px-3 dark:bg-gray-900 bg-white dark:text-gray-200 text-grey-900 mx-auto mb-20"
@@ -12,6 +12,9 @@
             >
               {{ doc.title }}
             </h1>
+            <p v-if="doc.date">
+              <em>Published on {{ doc.date }}</em>
+            </p>
           </header>
           <ContentRenderer :value="doc" />
         </ContentDoc>

@@ -1,6 +1,7 @@
 ---
 title: "Meer waarde leveren met Lerna"
 description: "Hoe een monorepository-gedreven architectuur met Lerna meer waarde kan leveren."
+date: 2018-10-15
 head:
   meta:
     - name: "keywords"

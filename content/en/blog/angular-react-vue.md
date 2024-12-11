@@ -1,6 +1,7 @@
 ---
 title: "Angular, React of Vue?"
 description: "It's time to change the mindset."
+date: 2021-02-19
 head:
   meta:
     - name: "keywords"
