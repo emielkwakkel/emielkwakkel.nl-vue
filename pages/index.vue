@@ -52,7 +52,11 @@
     <Section>
       <template v-slot:header>{{ $t("pages.home.latest-blogs") }}</template>
       <ContentList :path="`/${locale}/blog`" v-slot="{ list }">
-        <Blog v-for="article in list" :key="article.title" :article="article" />
+        <Blog
+          v-for="article in sortedArticles(list)"
+          :key="article.title"
+          :article="article"
+        />
       </ContentList>
     </Section>
     <Section>
@@ -72,6 +76,14 @@
 
 <script setup>
 const { t, locale, setLocale } = useI18n();
+
+const sortedArticles = (list) => {
+  if (!list) return [];
+
+  return [...list]
+    .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort by date (descending)
+    .slice(0, 2); // Take the two latest articles
+};
 
 const events = [
   {
