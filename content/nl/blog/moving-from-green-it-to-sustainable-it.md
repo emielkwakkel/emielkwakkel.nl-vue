@@ -22,6 +22,8 @@ Als ik aan duurzaamheid denk, is het niet alleen een abstract concept. Het gaat 
 
 Green IT is voor veel organisaties het uitgangspunt geweest. De focus ligt vaak op het verminderen van de koolstofemissies door energie-efficiëntere hardware en software. Bijvoorbeeld, het optimaliseren van het energieverbruik in datacenters of het gebruik van cloud-diensten in regio's met hernieuwbare energiebronnen. Deze benadering werkt—tot op zekere hoogte.
 
+![William Stanley Jevons](/images/blog/moving-from-green-it-to-sustainable-it/William%20Stanley%20Jevons.jpg)
+
 Maar Green IT kan een valkuil zijn als het de enige doelstelling is. Efficiëntie alleen garandeert geen duurzaamheid. Dit is waar de **Jevons Paradox** in beeld komt. Verbeteringen in efficiëntie verlagen vaak de kosten, waardoor technologie toegankelijker wordt en het gebruik toeneemt. Dit kan uiteindelijk leiden tot een grotere hulpbronnenconsumptie. Een goed voorbeeld hiervan is de snelle adoptie van generatieve AI. Toen modellen efficiënter werden en toegankelijker werden, nam hun populariteit toe en steeg de energie die nodig was om deze systemen te trainen en uit te voeren.
 
 Deze paradox toont ons aan dat Green IT alleen niet voldoende is. Het verminderen van emissies is goed, maar het is niet genoeg als de totale impact blijft groeien.
