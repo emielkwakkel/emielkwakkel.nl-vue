@@ -2,7 +2,6 @@
   <div
     class="min-h-screen dark:bg-gray-900 dark:text-gray-200 text-gray-900 bg-white"
   >
-    <Breadcrumb :links="links"></Breadcrumb>
     <div>
       <header
         class="flex container px-3 dark:bg-gray-900 bg-white text-gray-200 mx-auto"
@@ -10,13 +9,16 @@
         <div
           class="flex flex-col w-full justify-center text-center md:text-left"
         >
-          <h1 class="leading-normal mb-2 text-green-500 text-5xl font-bold">
+          <h1
+            class="leading-normal mb-2 text-green-500 text-5xl py-20 font-bold"
+          >
             Blog
             <span class="dark:text-white text-gray-900">for a</span> greener
             world
           </h1>
         </div>
       </header>
+      <Breadcrumb :links="links"></Breadcrumb>
 
       <section class="pt-20 pb-20 dark:bg-gray-950 bg-gray-200">
         <ContentList :path="`/${locale}/blog`" v-slot="{ list }">
