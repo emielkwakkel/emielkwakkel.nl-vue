@@ -18,21 +18,25 @@
         </div>
       </header>
 
-      <section class="w-full pt-20 pb-20 dark:bg-gray-950 bg-gray-200">
+      <section class="pt-20 pb-20 dark:bg-gray-950 bg-gray-200">
         <ContentList :path="`/${locale}/blog`" v-slot="{ list }">
-          <div class="container mx-auto sm:flex w-full px-3 p-3 pb-10">
+          <div class="container mx-auto">
             <router-link
-              v-for="article in list"
+              v-for="article in sortedArticles(list)"
               :key="article._path"
-              :to="article._path!"
-              class="w-full rounded dark:bg-gray-900 bg-white h-64 mb-3 sm:mr-3 p-5"
+              :to="article._path"
             >
-              <article>
+              <article
+                class="w-full px-3 p-3 pb-10 w-full rounded dark:bg-gray-900 bg-white mb-10"
+              >
                 <h2
                   class="leading-normal mb-2 text-green-500 text-3xl font-bold"
                 >
                   {{ article.title }}
                 </h2>
+                <p>
+                  <em>{{ article.date }}</em>
+                </p>
                 <p>{{ article.description }}</p>
               </article>
             </router-link>
@@ -43,8 +47,14 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const { locale } = useI18n();
+
+const sortedArticles = (list) => {
+  if (!list) return [];
+
+  return [...list].sort((a, b) => new Date(b.date) - new Date(a.date));
+};
 
 useHead({
   title: "Emiel Kwakkel - Blogs",
