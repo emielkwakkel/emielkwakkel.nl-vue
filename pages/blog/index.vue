@@ -37,7 +37,7 @@
                   {{ article.title }}
                 </h2>
                 <p>
-                  <em>{{ article.date }}</em>
+                  <em>{{ $t("blogs.published-on") }}: {{ article.date }}</em>
                 </p>
                 <p>{{ article.description }}</p>
               </article>

@@ -22,7 +22,8 @@
         }
     },
     "blogs": {
-        "readmore": "Read more"
+        "readmore": "Read more",
+        "published-on": "Published on"
     },
     "events": {
         "actions": {

@@ -21,7 +21,8 @@
         }
     },
     "blogs": {
-        "readmore": "Lees verder"
+        "readmore": "Lees verder",
+        "published-on": "Gepubliceerd op"
     },
     "events": {
         "actions": {
