@@ -118,5 +118,11 @@ const events = [
 useHead({
   title: "Emiel Kwakkel - Sustainable IT",
   description: "My mission is to promote Sustainable IT for a greener world",
+  link: [
+    {
+      rel: "manifest",
+      href: "manifest.json",
+    },
+  ],
 });
 </script>
