@@ -8,7 +8,7 @@
       >
         <p>
           <img
-            src="~/assets/emiel-kwakkel.jpg"
+            src="/images/emiel-kwakkel.jpg"
             alt="Emiel Kwakkel"
             class="rounded-full inline sm:hidden w-3/5 text-center mb-10"
           />
@@ -39,7 +39,7 @@
       </section>
       <aside class="hidden sm:flex flex-col w-2/5 justify-center">
         <img
-          src="~/assets/emiel-kwakkel.jpg"
+          src="/images/emiel-kwakkel.jpg"
           alt="Emiel Kwakkel"
           class="rounded-full"
         />
