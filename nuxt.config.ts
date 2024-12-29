@@ -2,6 +2,12 @@
 export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxtjs/i18n"],
   css: ["~/assets/css/styles.css"],
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      ignore: ["/manifest.json"],
+    },
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -40,9 +46,11 @@ export default defineNuxtConfig({
             "My mission is to promote Sustainable IT for a greener world",
         },
       ],
-      link: [{ rel: "icon", type: "image/ico", href: "/favicon.ico" }],
+      link: [
+        { rel: "icon", type: "image/ico", href: "/favicon.ico" },
+        { rel: "manifest", href: "/manifest.json" },
+      ],
     },
   },
-
   compatibilityDate: "2024-12-06",
 });
