@@ -2,13 +2,13 @@
     "display": "standalone",
     "orientation": "portrait",
     "background_color": "#101827",
-    "short_name": "EK",
-    "name": "Emiel Kwakkel",
+    "short_name": "Emiel Kwakkel",
+    "name": "Emiel Kwakkel - Sustainable IT",
     "icons": [
         {
         "src": "/icon.svg",
         "sizes": "any",
-        "type": "image/svg"
+        "type": "image/svg+xml"
         }
     ],
     "start_url": "."
