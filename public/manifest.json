@@ -1,6 +1,16 @@
 {
     "display": "standalone",
     "orientation": "portrait",
-    "theme_color": "#22c55e",
-    "background_color": "#101827"
+    "theme_color": "#101827",
+    "background_color": "#101827",
+    "short_name": "EK",
+    "name": "Emiel Kwakkel",
+    "icons": [
+        {
+        "src": "/icon.svg",
+        "sizes": "any",
+        "type": "image/svg"
+        }
+    ],
+    "start_url": "."
 }
