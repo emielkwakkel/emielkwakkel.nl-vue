@@ -12,5 +12,15 @@
         "type": "image/svg"
         }
     ],
-    "start_url": "."
+    "start_url": ".",
+    "shortcuts": [
+        {
+            "name": "English",
+            "url": "/en"
+        },
+        {
+            "name": "Dutch",
+            "url": "/nl"
+        }
+    ]
 }
