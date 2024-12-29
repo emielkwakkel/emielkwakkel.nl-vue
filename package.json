@@ -15,5 +15,8 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "^9.1.1"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.29.1"
   }
 }
