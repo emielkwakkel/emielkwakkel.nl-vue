@@ -4,6 +4,7 @@
     "background_color": "#101827",
     "short_name": "Emiel Kwakkel",
     "name": "Emiel Kwakkel - Sustainable IT",
+    "description": "My mission is to promote Sustainable IT for a greener world",
     "icons": [
         {
         "src": "/icon.svg",
