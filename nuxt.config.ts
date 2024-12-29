@@ -28,6 +28,16 @@ export default defineNuxtConfig({
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
+          name: "theme-color",
+          content: "#101827",
+          media: "(prefers-color-scheme: dark)",
+        },
+        {
+          name: "theme-color",
+          content: "#fff",
+          media: "(prefers-color-scheme: light)",
+        },
+        {
           property: "og:image",
           content: "https://emielkwakkel.nl/og-image.jpg",
         },
