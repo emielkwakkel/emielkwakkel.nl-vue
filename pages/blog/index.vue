@@ -1,11 +1,9 @@
 <template>
   <div
-    class="min-h-screen dark:bg-gray-900 dark:text-gray-200 text-gray-900 bg-white"
+    class="min-h-screen dark:bg-gray-900 dark:text-white text-gray-900 bg-white"
   >
     <div>
-      <header
-        class="flex container px-3 dark:bg-gray-900 bg-white text-gray-200 mx-auto"
-      >
+      <header class="flex container px-3 text-gray-200 mx-auto">
         <div
           class="flex flex-col w-full justify-center text-center md:text-left"
         >
@@ -20,7 +18,7 @@
       </header>
       <Breadcrumb :links="links"></Breadcrumb>
 
-      <section class="pt-20 pb-20 dark:bg-gray-950 bg-gray-200">
+      <section class="pt-20 pb-20">
         <ContentList :path="`/${locale}/blog`" v-slot="{ list }">
           <div class="container mx-auto">
             <router-link
@@ -29,7 +27,7 @@
               :to="article._path"
             >
               <article
-                class="w-full px-3 p-3 pb-10 w-full rounded dark:bg-gray-900 bg-white mb-10"
+                class="w-full px-3 p-3 pb-10 w-full rounded dark:bg-gray-950 bg-gray-100 mb-10"
               >
                 <h2
                   class="leading-normal mb-2 text-green-500 text-3xl font-bold"

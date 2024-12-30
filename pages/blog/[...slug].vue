@@ -1,9 +1,24 @@
 <template>
   <div class="min-h-screen dark:bg-gray-900 pb-10 bg-white">
     <ContentDoc v-slot="{ doc }">
+      <header
+        class="flex container px-3 dark:bg-gray-900 text-gray-200 mx-auto"
+      >
+        <div
+          class="flex flex-col w-full justify-center text-center md:text-left"
+        >
+          <h2
+            class="leading-normal mb-2 text-green-500 text-5xl py-20 font-bold"
+          >
+            Blog
+            <span class="dark:text-white text-gray-900">for a</span> greener
+            world
+          </h2>
+        </div>
+      </header>
       <Breadcrumb :links="links"></Breadcrumb>
       <section
-        class="flex container h-full px-3 dark:bg-gray-900 bg-white dark:text-gray-200 text-grey-900 mx-auto py-10"
+        class="flex container h-full px-3 dark:bg-gray-900 dark:text-gray-200 text-grey-900 mx-auto py-10"
       >
         <article class="flex flex-col w-full">
           <header>

@@ -104,15 +104,15 @@ const events = [
       title: t("events.actions.watch-recording"),
     },
   },
-  {
-    name: "FrontMania",
-    date: "October 12th, 2023",
-    title: "Holistic Approach to Sustainable IT",
-    link: {
-      href: "https://frontmania.com/",
-      title: t("events.actions.more-information"),
-    },
-  },
+  // {
+  //   name: "FrontMania",
+  //   date: "October 12th, 2023",
+  //   title: "Holistic Approach to Sustainable IT",
+  //   link: {
+  //     href: "https://frontmania.com/",
+  //     title: t("events.actions.more-information"),
+  //   },
+  // },
 ];
 
 useHead({
