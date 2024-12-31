@@ -2,7 +2,7 @@
     "pages": {
         "home": {
             "latest-blogs": "Latest Blogs",
-            "sustainable-it-blog": "Blog on Sustainable IT",
+            "talks": "Talks on Sustainable IT",
             "events": "Public events",
             "introduction": {
                 "line1": "Hi, I am Emiel Kwakkel,",
@@ -21,8 +21,8 @@
             "dutch": "Dutch"
         }
     },
-    "blogs": {
-        "readmore": "Read more",
+    "content": {
+        "read-more": "Read more",
         "published-on": "Published on"
     },
     "events": {
