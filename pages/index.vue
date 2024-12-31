@@ -30,10 +30,10 @@
         </p>
         <p class="mt-12">
           <a
-            href="blog/sustainable-choices"
+            href="talks"
             class="bg-blue-300 text-gray-800 font-bold rounded-full my-6 py-4 px-8 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
-            {{ $t("pages.home.sustainable-it-blog") }}
+            {{ $t("pages.home.talks") }}
           </a>
         </p>
       </section>
@@ -47,15 +47,15 @@
     </section>
     <Section>
       <template v-slot:header>{{ $t("pages.home.events") }}</template>
-      <Event v-for="event in events" :key="event.name" :event="event" />
+      <Card v-for="event in events" :key="event.title" :card="event" />
     </Section>
     <Section>
       <template v-slot:header>{{ $t("pages.home.latest-blogs") }}</template>
       <ContentList :path="`/${locale}/blog`" v-slot="{ list }">
-        <Blog
+        <Card
           v-for="article in sortedArticles(list)"
           :key="article.title"
-          :article="article"
+          :card="article"
         />
       </ContentList>
     </Section>
@@ -87,27 +87,27 @@ const sortedArticles = (list) => {
 
 const events = [
   {
-    name: "SNiC SustainabilIT",
+    title: "SNiC SustainabilIT",
     date: "November 27th, 2024",
-    title: "The Hidden Impact of Developers",
+    content: "The Hidden Impact of Developers",
     link: {
       href: "https://sustainabilit.snic.nl/",
       title: t("events.actions.more-information"),
     },
   },
   {
-    name: "Frontend Lightning Talks",
+    title: "Frontend Lightning Talks",
     date: "November 20th, 2024",
-    title: "The Hidden Impact of Developers",
+    content: "The Hidden Impact of Developers",
     link: {
       href: "https://www.youtube.com/watch?v=rauhrV5EfVE",
       title: t("events.actions.watch-recording"),
     },
   },
   // {
-  //   name: "FrontMania",
+  //   title: "FrontMania",
   //   date: "October 12th, 2023",
-  //   title: "Holistic Approach to Sustainable IT",
+  //   content: "Holistic Approach to Sustainable IT",
   //   link: {
   //     href: "https://frontmania.com/",
   //     title: t("events.actions.more-information"),
