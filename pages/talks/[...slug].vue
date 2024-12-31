@@ -57,12 +57,8 @@ const { data: events } = await useAsyncData(
   async () => await queryContent(`/${locale.value}/events`).find(),
 );
 
-function getEventBySlug(slug: string) {
-  console.log("getEventsBySlug", slug);
-  return events?.value?.find(
-    (e) => e._path === `/${locale.value}/events/${slug}`,
-  );
-}
+const getEventBySlug = (slug: string) =>
+  events?.value?.find((e) => e._path === `/${locale.value}/events/${slug}`);
 
 const links = [
   {
