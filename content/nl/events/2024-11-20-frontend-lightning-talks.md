@@ -1,14 +1,15 @@
 ---
 title: "Sogeti Frontend Lightning Talks"
+description: "Emiel presenteerde in 20 minuten The Hidden Impact of Developers bij de Sogeti Frontend Lightning Talks."
 organisation: "Sogeti"
 event: "Frontend Lightning Talks"
 theme: "Impact of Frontend"
 location: "Online"
-date: "2024-11-27"
+date: "2024-11-20"
 website: "https://www.meetup.com/sogeti-frontend/events/302998087"
 recording: "https://www.youtube.com/watch?v=rauhrV5EfVE"
 ---
 
 ## About Frontend Lightning Talks
 
-SNiC is the largest national Computer Science and Artificial Intelligence conference, organized for and by students. This edition's theme of the conference is SustainabilIT, where we focus on what the IT sector can do and has done when it comes to sustainable technology. We focus on the technology of the past, the technology of today and the technology of the future.
+Word jij ook enthousiast over termen als Angular, Vue.js, iOS, Android, Ionic, Xamarin en TypeScript? Vanuit Sogeti organiseren we regelmatig sessies voor de ervaren en beginnen front-end developers. Omdat we onze kennis graag delen ben jij ook welkom!

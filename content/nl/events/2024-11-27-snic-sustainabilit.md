@@ -1,5 +1,7 @@
 ---
 title: "SNiC SustainabilIT"
+description: "Emiel was de afsluitende keynote speaker in een volgepakt Spant! in Bussum voor 800 studenten die SNiC bezochten."
+talk: "2024-the-hidden-impact-of-developers"
 organisation: "Stichting Nationaal Informatica Congres (SNiC)"
 name: "SustainabilIT"
 theme: "Sustainable IT"
