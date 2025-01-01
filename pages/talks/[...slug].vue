@@ -1,6 +1,7 @@
 <template>
   <div class="min-h-screen dark:bg-gray-900 pb-10 bg-white">
     <ContentDoc v-slot="{ doc }">
+      <Navbar />
       <Breadcrumb :links="links"></Breadcrumb>
       <section
         class="flex container h-full px-3 dark:bg-gray-900 dark:text-gray-200 text-grey-900 mx-auto py-10"
