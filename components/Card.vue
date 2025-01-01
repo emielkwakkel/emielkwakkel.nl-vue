@@ -7,7 +7,7 @@
       <span class="text-gray-500"> <br />{{ card.date }}</span>
     </h3>
     <h4 class="sm:pt-3 mb-8">
-      {{ card.title }}
+      {{ card.description }}
     </h4>
     <a
       v-if="card.link"
@@ -27,6 +27,7 @@ interface Link {
 
 interface Card {
   title: string;
+  description: string;
   date: string;
   content: string;
   link?: Link;
