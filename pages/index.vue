@@ -49,7 +49,7 @@
       <template v-slot:header>{{ $t("pages.home.events") }}</template>
       <ContentList :path="`/${locale}/events`" v-slot="{ list }">
         <Card
-          v-for="event in sortedContent(list)"
+          v-for="event in sortContentByDate(list, 2)"
           :key="event.title"
           :card="event"
         />
@@ -59,7 +59,7 @@
       <template v-slot:header>{{ $t("pages.home.latest-blogs") }}</template>
       <ContentList :path="`/${locale}/blog`" v-slot="{ list }">
         <Card
-          v-for="article in sortedContent(list)"
+          v-for="article in sortContentByDate(list, 2)"
           :key="article.title"
           :card="article"
         />
@@ -81,6 +81,7 @@
 </template>
 
 <script setup>
+import { sortContentByDate } from "../utils/content";
 const { t, locale, setLocale } = useI18n();
 
 useHead({

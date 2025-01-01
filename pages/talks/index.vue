@@ -8,7 +8,7 @@
         <ContentList :path="`/${locale}/talks`" v-slot="{ list }">
           <div class="container mx-auto">
             <router-link
-              v-for="talk in sortedArticles(list)"
+              v-for="talk in sortContentByDate(list)"
               :key="talk._path"
               :to="talk._path"
             >
@@ -34,17 +34,8 @@
 </template>
 
 <script setup>
-const { locale } = useI18n();
-
-const sortedArticles = (list) => {
-  if (!list) return [];
-
-  return [...list].sort((a, b) => new Date(b.date) - new Date(a.date));
-};
-
-useHead({
-  title: "Emiel Kwakkel - Talks",
-});
+import { sortContentByDate } from "../utils/content";
+const { t, locale } = useI18n();
 
 const links = [
   {
