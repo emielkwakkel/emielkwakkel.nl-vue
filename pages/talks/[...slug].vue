@@ -14,7 +14,7 @@
             </h1>
             <p v-if="doc.date">
               <em class="text-gray-500"
-                >{{ $t("content.published-on") }} {{ doc.date }}</em
+                >{{ $t("content.published-in") }} {{ doc.date }}</em
               >
             </p>
           </header>
@@ -30,7 +30,7 @@
           <Card
             v-if="getEventBySlug(eventSlug)"
             :key="eventSlug"
-            :card="getEventBySlug(eventSlug)"
+            :card="addLinkToEvents(getEventBySlug(eventSlug))"
           />
           <div v-else>No event found for {{ eventSlug }}</div>
         </div>
@@ -40,11 +40,25 @@
 </template>
 
 <script setup lang="ts">
-const { locale } = useI18n();
+const { t, locale } = useI18n();
 const route = useRoute();
 const { data } = await useAsyncData("currentPageContent", () =>
   queryContent(route.path).findOne(),
 );
+
+const addLinkToEvents = (content: any) => {
+  if (!content.website && !content.recording) return content;
+
+  return {
+    ...content,
+    link: {
+      title: content.recording
+        ? t("events.actions.watch-recording")
+        : t("events.actions.event-website"),
+      href: !!content.recording ? content.recording : content.website,
+    },
+  };
+};
 
 const { data: events } = await useAsyncData(
   "eventsContent",

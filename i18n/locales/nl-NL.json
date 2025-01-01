@@ -35,11 +35,12 @@
     },
     "content": {
         "read-more": "Lees verder",
-        "published-on": "Gepubliceerd op"
+        "published-on": "Gepubliceerd op",
+        "published-in": "Gepubliceerd in"
     },
     "events": {
         "actions": {
-            "more-information": "Meer informatie",
+            "event-website": "Website evenement",
             "watch-recording": "Bekijk opname"
         }
     }

@@ -47,22 +47,32 @@
     </section>
     <Section>
       <template v-slot:header>{{ $t("pages.home.events") }}</template>
-      <ContentList :path="`/${locale}/events`" v-slot="{ list }">
-        <Card
-          v-for="event in sortContentByDate(list, 2)"
-          :key="event.title"
-          :card="event"
-        />
+      <ContentList :query="eventQuery">
+        <template #default="{ list }">
+          <Card
+            v-for="event in addLinkToEvents(list)"
+            :key="event._path"
+            :card="event"
+          />
+        </template>
+        <template #not-found>
+          <p>No events found.</p>
+        </template>
       </ContentList>
     </Section>
     <Section>
       <template v-slot:header>{{ $t("pages.home.latest-blogs") }}</template>
-      <ContentList :path="`/${locale}/blog`" v-slot="{ list }">
-        <Card
-          v-for="article in sortContentByDate(list, 2)"
-          :key="article.title"
-          :card="article"
-        />
+      <ContentList :query="blogQuery">
+        <template #default="{ list }">
+          <Card
+            v-for="article in addLinkToBlogs(list)"
+            :key="article._path"
+            :card="article"
+          />
+        </template>
+        <template #not-found>
+          <p>No blogs articles found.</p>
+        </template>
       </ContentList>
     </Section>
     <Section>
@@ -81,11 +91,45 @@
 </template>
 
 <script setup lang="ts">
-import { sortContentByDate } from "../utils/content";
+import type { QueryBuilderParams } from "@nuxt/content";
 const { t, locale, setLocale } = useI18n();
+const eventQuery: QueryBuilderParams = {
+  path: `/${locale.value}/events`,
+  limit: 2,
+  sort: [{ date: -1 }],
+};
+const blogQuery: QueryBuilderParams = {
+  path: `/${locale.value}/blog`,
+  limit: 2,
+  sort: [{ date: -1 }],
+};
 
-const addLinkToEvent = (content: any) => {
-  console.log(content);
+const addLinkToEvents = (events: any[]) => {
+  return events.map((content) => {
+    if (!content.website && !content.recording) return content;
+
+    return {
+      ...content,
+      link: {
+        title: content.recording
+          ? t("events.actions.watch-recording")
+          : t("events.actions.event-website"),
+        href: !!content.recording ? content.recording : content.website,
+      },
+    };
+  });
+};
+
+const addLinkToBlogs = (blogs: any[]) => {
+  return blogs.map((content) => {
+    return {
+      ...content,
+      link: {
+        title: t("content.read-more"),
+        href: content._path,
+      },
+    };
+  });
 };
 
 useHead({ title: t("pages.home.head.title") });

@@ -48,7 +48,7 @@
 </template>
 
 <script setup>
-const { locale } = useI18n();
+const { t, locale } = useI18n();
 
 const sortedArticles = (list) => {
   if (!list) return [];

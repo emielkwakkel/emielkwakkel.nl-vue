@@ -27,7 +27,6 @@
         }
     },
     "generic": {
-        "readmore": "Read more",
         "language": {
             "change": "Change language",
             "english": "English",
@@ -36,11 +35,12 @@
     },
     "content": {
         "read-more": "Read more",
-        "published-on": "Published on"
+        "published-on": "Published on",
+        "published-in": "Published in"
     },
     "events": {
         "actions": {
-            "more-information": "More information",
+            "event-website": "Event website",
             "watch-recording": "Watch recording"
         }
     }
