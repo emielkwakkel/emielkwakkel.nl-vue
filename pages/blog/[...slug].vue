@@ -13,7 +13,9 @@
               {{ doc.title }}
             </h1>
             <p v-if="doc.date">
-              <em class="text-gray-500">Published on {{ doc.date }}</em>
+              <em class="text-gray-500"
+                >{{ $t("content.published-on") }} {{ doc.date }}</em
+              >
             </p>
           </header>
           <p>
