@@ -3,12 +3,14 @@
     class="min-h-screen dark:bg-gray-900 dark:text-white text-gray-900 bg-white"
   >
     <div>
+      <Navbar />
+      <Breadcrumb :links="links"></Breadcrumb>
       <header class="flex container px-3 text-gray-200 mx-auto">
         <div
           class="flex flex-col w-full justify-center text-center md:text-left"
         >
           <h1
-            class="leading-normal mb-2 text-green-500 text-5xl py-20 font-bold"
+            class="leading-normal mb-2 text-green-500 text-5xl pt-20 font-bold"
           >
             Blog
             <span class="dark:text-white text-gray-900">for a</span> greener
@@ -16,7 +18,6 @@
           </h1>
         </div>
       </header>
-      <Breadcrumb :links="links"></Breadcrumb>
 
       <section class="pt-20 pb-20">
         <ContentList :path="`/${locale}/blog`" v-slot="{ list }">

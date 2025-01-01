@@ -1,7 +1,8 @@
 <template>
   <div class="dark:bg-gray-900 bg-white">
+    <Navbar />
     <section
-      class="flex container h-screen px-3 dark:text-gray-200 text-grey-900 mx-auto lg:p-20"
+      class="flex container h-screen px-3 dark:text-gray-200 mx-auto lg:p-20"
     >
       <section
         class="flex flex-col w-full sm:w-3/5 justify-center text-center md:text-left"
@@ -93,6 +94,7 @@
 <script setup lang="ts">
 import type { QueryBuilderParams } from "@nuxt/content";
 const { t, locale, setLocale } = useI18n();
+
 const eventQuery: QueryBuilderParams = {
   path: `/${locale.value}/events`,
   limit: 2,

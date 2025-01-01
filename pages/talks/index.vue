@@ -3,6 +3,7 @@
     class="min-h-screen dark:bg-gray-900 dark:text-white text-gray-900 bg-white"
   >
     <div>
+      <Navbar />
       <Breadcrumb :links="links"></Breadcrumb>
       <section class="pt-20 pb-20">
         <ContentList :path="`/${locale}/talks`" v-slot="{ list }">
