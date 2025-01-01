@@ -67,8 +67,5 @@ const links = [
   },
 ];
 
-useHead({
-  title: t("pages.home.blogs.title"),
-  description: t("pages.home.blogs.description"),
-});
+useHead({ title: t("pages.home.blogs.title") });
 </script>

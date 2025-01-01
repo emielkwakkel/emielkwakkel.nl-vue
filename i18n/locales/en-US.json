@@ -2,8 +2,7 @@
     "pages": {
         "home": {
             "head": {
-                "title": "Emiel Kwakkel - Sustainable IT",
-                "description": "My mission is to promote Sustainable IT for a greener world"
+                "title": "Emiel Kwakkel - Sustainable IT"
             },
             "latest-blogs": "Latest Blogs",
             "talks": "Talks on Sustainable IT",
@@ -18,14 +17,12 @@
         },
         "blogs": {
             "head": {
-                "title": "Emiel Kwakkel - Blogs",
-                "description": "Overview of all published blog articles"
+                "title": "Emiel Kwakkel - Blogs"
             }
         },
         "talks": {
             "head": {
-                "title": "Emiel Kwakkel - Talks",
-                "description": "Overview of talks and events"
+                "title": "Emiel Kwakkel - Talks"
             }
         }
     },

@@ -80,12 +80,13 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { sortContentByDate } from "../utils/content";
 const { t, locale, setLocale } = useI18n();
 
-useHead({
-  title: t("pages.home.head.title"),
-  description: t("pages.home.head.description"),
-});
+const addLinkToEvent = (content: any) => {
+  console.log(content);
+};
+
+useHead({ title: t("pages.home.head.title") });
 </script>
