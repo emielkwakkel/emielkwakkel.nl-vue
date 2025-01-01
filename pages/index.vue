@@ -47,13 +47,19 @@
     </section>
     <Section>
       <template v-slot:header>{{ $t("pages.home.events") }}</template>
-      <Card v-for="event in events" :key="event.title" :card="event" />
+      <ContentList :path="`/${locale}/events`" v-slot="{ list }">
+        <Card
+          v-for="event in sortedContent(list)"
+          :key="event.title"
+          :card="event"
+        />
+      </ContentList>
     </Section>
     <Section>
       <template v-slot:header>{{ $t("pages.home.latest-blogs") }}</template>
       <ContentList :path="`/${locale}/blog`" v-slot="{ list }">
         <Card
-          v-for="article in sortedArticles(list)"
+          v-for="article in sortedContent(list)"
           :key="article.title"
           :card="article"
         />
@@ -77,43 +83,13 @@
 <script setup>
 const { t, locale, setLocale } = useI18n();
 
-const sortedArticles = (list) => {
+const sortedContent = (list) => {
   if (!list) return [];
 
   return [...list]
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, 2);
 };
-
-const events = [
-  {
-    title: "SNiC SustainabilIT",
-    date: "November 27th, 2024",
-    content: "The Hidden Impact of Developers",
-    link: {
-      href: "https://sustainabilit.snic.nl/",
-      title: t("events.actions.more-information"),
-    },
-  },
-  {
-    title: "Frontend Lightning Talks",
-    date: "November 20th, 2024",
-    content: "The Hidden Impact of Developers",
-    link: {
-      href: "https://www.youtube.com/watch?v=rauhrV5EfVE",
-      title: t("events.actions.watch-recording"),
-    },
-  },
-  // {
-  //   title: "FrontMania",
-  //   date: "October 12th, 2023",
-  //   content: "Holistic Approach to Sustainable IT",
-  //   link: {
-  //     href: "https://frontmania.com/",
-  //     title: t("events.actions.more-information"),
-  //   },
-  // },
-];
 
 useHead({
   title: "Emiel Kwakkel - Sustainable IT",
