@@ -32,14 +32,6 @@
           />
           <div v-else>No event found for {{ eventSlug }}</div>
         </div>
-        <ul>
-          <li v-for="eventSlug in doc.events" :key="eventSlug">
-            <div v-if="getEventBySlug(eventSlug)">
-              {{ getEventBySlug(eventSlug)?.title }}
-            </div>
-            <div v-else>No event found for {{ eventSlug }}</div>
-          </li>
-        </ul>
       </Section>
     </ContentDoc>
   </div>
