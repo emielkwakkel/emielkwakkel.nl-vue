@@ -83,16 +83,8 @@
 <script setup>
 const { t, locale, setLocale } = useI18n();
 
-const sortedContent = (list) => {
-  if (!list) return [];
-
-  return [...list]
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(0, 2);
-};
-
 useHead({
-  title: "Emiel Kwakkel - Sustainable IT",
-  description: "My mission is to promote Sustainable IT for a greener world",
+  title: t("pages.home.head.title"),
+  description: t("pages.home.head.description"),
 });
 </script>

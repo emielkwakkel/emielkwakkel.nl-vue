@@ -56,10 +56,6 @@ const sortedArticles = (list) => {
   return [...list].sort((a, b) => new Date(b.date) - new Date(a.date));
 };
 
-useHead({
-  title: "Emiel Kwakkel - Blogs",
-});
-
 const links = [
   {
     label: "Home",
@@ -70,4 +66,9 @@ const links = [
     to: `/${locale.value}/blog`,
   },
 ];
+
+useHead({
+  title: t("pages.home.blogs.title"),
+  description: t("pages.home.blogs.description"),
+});
 </script>

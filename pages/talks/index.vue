@@ -56,4 +56,9 @@ const links = [
     to: `/${locale.value}/talks`,
   },
 ];
+
+useHead({
+  title: t("pages.home.talks.title"),
+  description: t("pages.home.talks.description"),
+});
 </script>
