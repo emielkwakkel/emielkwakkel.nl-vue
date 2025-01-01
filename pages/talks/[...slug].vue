@@ -28,7 +28,7 @@
           <Card
             v-if="getEventBySlug(eventSlug)"
             :key="eventSlug"
-            :card="getEventBySlug(eventSlug) as any"
+            :card="getEventBySlug(eventSlug)"
           />
           <div v-else>No event found for {{ eventSlug }}</div>
         </div>

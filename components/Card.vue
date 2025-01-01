@@ -34,6 +34,6 @@ interface Card {
 }
 
 defineProps<{
-  card: Card;
+  card: Card | any;
 }>();
 </script>
