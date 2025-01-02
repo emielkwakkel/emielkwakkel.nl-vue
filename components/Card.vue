@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full rounded-lg dark:text-white mb-3 sm:mr-3"
+    class="w-full rounded-lg dark:text-white"
     :class="[
       shade ? 'dark:bg-gray-950 bg-gray-100' : 'dark:bg-gray-900 bg-white',
     ]"

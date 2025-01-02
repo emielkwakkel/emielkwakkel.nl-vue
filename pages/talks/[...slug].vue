@@ -57,7 +57,7 @@ const addLinkToEvents = (content: any) => {
       title: content.recording
         ? t("events.actions.watch-recording")
         : t("events.actions.event-website"),
-      href: !!content.recording ? content.recording : content.website,
+      href: content.recording ? content.recording : content.website,
     },
   };
 };

@@ -12,9 +12,7 @@
         <slot name="header"></slot>
       </h2>
     </header>
-    <div
-      class="container mx-auto sm:flex w-full px-3 black:text-gray-200 text-gray-900 p-3 pb-10"
-    >
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
       <slot></slot>
     </div>
   </section>
