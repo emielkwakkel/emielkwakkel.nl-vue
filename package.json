@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.13.4",
+    "@nuxt/image": "^1.8.1",
     "autoprefixer": "^10.4.8",
     "nuxt": "^3.14.1592",
     "postcss": "^8.4.16",

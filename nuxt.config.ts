@@ -1,12 +1,15 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxtjs/i18n"],
+  modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxt/image"],
   css: ["~/assets/css/styles.css"],
   nitro: {
     prerender: {
       crawlLinks: true,
       ignore: ["/manifest.json"],
     },
+  },
+  image: {
+    quality: 80,
   },
   postcss: {
     plugins: {

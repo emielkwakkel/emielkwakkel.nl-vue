@@ -1,5 +1,5 @@
 <template>
-  <img :src="src" :alt="alt" :width="width" :height="height" />
+  <NuxtImg :src="src" :alt="alt" :width="width" :height="height" />
   <p v-if="alt">
     <em>{{ alt }}</em>
   </p>
