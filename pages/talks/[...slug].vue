@@ -18,6 +18,7 @@
                 >{{ $t("content.published-in") }} {{ doc.date }}</em
               >
             </p>
+            <NuxtImg v-if="doc.image" :alt="doc.title" :src="doc.image" />
           </header>
           <p>
             <strong>{{ doc.description }}</strong>
