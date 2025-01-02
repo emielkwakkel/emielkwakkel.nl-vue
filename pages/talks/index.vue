@@ -21,7 +21,7 @@
         <ContentList :query="talksQuery">
           <template #default="{ list }">
             <Card
-              v-for="talk in addLinkToTalks(list)"
+              v-for="talk in addReadmoreToContent(list, t)"
               :key="talk._path"
               :card="talk"
               :shade="true"
@@ -43,18 +43,6 @@ const { t, locale } = useI18n();
 const talksQuery: QueryBuilderParams = {
   path: `/${locale.value}/talks`,
   sort: [{ date: -1 }],
-};
-
-const addLinkToTalks = (events: any[]) => {
-  return events.map((content) => {
-    return {
-      ...content,
-      link: {
-        title: t("content.read-more"),
-        href: content._path,
-      },
-    };
-  });
 };
 
 const links = [

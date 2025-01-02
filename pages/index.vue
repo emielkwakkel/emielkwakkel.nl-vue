@@ -51,7 +51,7 @@
       <ContentList :query="eventQuery">
         <template #default="{ list }">
           <Card
-            v-for="event in addLinkToEvents(list)"
+            v-for="event in addLinkToEvents(list, t)"
             :key="event._path"
             :card="event"
           />
@@ -66,7 +66,7 @@
       <ContentList :query="blogQuery">
         <template #default="{ list }">
           <Card
-            v-for="article in addLinkToBlogs(list)"
+            v-for="article in addReadmoreToContent(list, t)"
             :key="article._path"
             :card="article"
             :shade="true"
@@ -101,38 +101,11 @@ const eventQuery: QueryBuilderParams = {
   limit: 2,
   sort: [{ date: -1 }],
 };
+
 const blogQuery: QueryBuilderParams = {
   path: `/${locale.value}/blog`,
   limit: 2,
   sort: [{ date: -1 }],
-};
-
-const addLinkToEvents = (events: any[]) => {
-  return events.map((content) => {
-    if (!content.website && !content.recording) return content;
-
-    return {
-      ...content,
-      link: {
-        title: content.recording
-          ? t("events.actions.watch-recording")
-          : t("events.actions.event-website"),
-        href: !!content.recording ? content.recording : content.website,
-      },
-    };
-  });
-};
-
-const addLinkToBlogs = (blogs: any[]) => {
-  return blogs.map((content) => {
-    return {
-      ...content,
-      link: {
-        title: t("content.read-more"),
-        href: content._path,
-      },
-    };
-  });
 };
 
 useHead({ title: t("pages.home.head.title") });
