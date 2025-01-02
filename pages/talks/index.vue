@@ -17,38 +17,45 @@
           </h1>
         </div>
       </header>
-      <section class="pt-20 pb-20">
-        <ContentList :path="`/${locale}/talks`" v-slot="{ list }">
-          <div class="container mx-auto">
-            <router-link
-              v-for="talk in sortContentByDate(list)"
+      <Section :shade="false">
+        <ContentList :query="talksQuery">
+          <template #default="{ list }">
+            <Card
+              v-for="talk in addLinkToTalks(list)"
               :key="talk._path"
-              :to="talk._path"
-            >
-              <article
-                class="w-full px-3 p-3 pb-10 w-full rounded dark:bg-gray-950 bg-gray-100 mb-10"
-              >
-                <h2
-                  class="leading-normal mb-2 text-green-500 text-3xl font-bold"
-                >
-                  {{ talk.title }}
-                </h2>
-                <p>
-                  <em>{{ $t("content.published-on") }}: {{ talk.date }}</em>
-                </p>
-                <p>{{ talk.description }}</p>
-              </article>
-            </router-link>
-          </div>
+              :card="talk"
+              :shade="true"
+            />
+          </template>
+          <template #not-found>
+            <p>No talks found.</p>
+          </template>
         </ContentList>
-      </section>
+      </Section>
     </div>
   </div>
 </template>
 
-<script setup>
-import { sortContentByDate } from "../utils/content";
+<script setup lang="ts">
+import type { QueryBuilderParams } from "@nuxt/content";
 const { t, locale } = useI18n();
+
+const talksQuery: QueryBuilderParams = {
+  path: `/${locale.value}/talks`,
+  sort: [{ date: -1 }],
+};
+
+const addLinkToTalks = (events: any[]) => {
+  return events.map((content) => {
+    return {
+      ...content,
+      link: {
+        title: t("content.read-more"),
+        href: content._path,
+      },
+    };
+  });
+};
 
 const links = [
   {
@@ -61,5 +68,5 @@ const links = [
   },
 ];
 
-useHead({ title: t("pages.home.talks.title") });
+useHead({ title: t("pages.talks.head.title") });
 </script>
