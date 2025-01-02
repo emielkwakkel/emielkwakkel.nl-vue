@@ -18,43 +18,32 @@
           </h1>
         </div>
       </header>
-
-      <section class="pt-20 pb-20">
-        <ContentList :path="`/${locale}/blog`" v-slot="{ list }">
-          <div class="container mx-auto">
-            <router-link
-              v-for="article in sortedArticles(list)"
-              :key="article._path"
-              :to="article._path"
-            >
-              <article
-                class="w-full px-3 p-3 pb-10 w-full rounded dark:bg-gray-950 bg-gray-100 mb-10"
-              >
-                <h2
-                  class="leading-normal mb-2 text-green-500 text-3xl font-bold"
-                >
-                  {{ article.title }}
-                </h2>
-                <p>
-                  <em>{{ $t("content.published-on") }}: {{ article.date }}</em>
-                </p>
-                <p>{{ article.description }}</p>
-              </article>
-            </router-link>
-          </div>
+      <Section :shade="false">
+        <ContentList :query="blogQuery">
+          <template #default="{ list }">
+            <Card
+              v-for="talk in addReadmoreToContent(list, t)"
+              :key="talk._path"
+              :card="talk"
+              :shade="true"
+            />
+          </template>
+          <template #not-found>
+            <p>No events found.</p>
+          </template>
         </ContentList>
-      </section>
+      </Section>
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import type { QueryBuilderParams } from "@nuxt/content";
 const { t, locale } = useI18n();
 
-const sortedArticles = (list) => {
-  if (!list) return [];
-
-  return [...list].sort((a, b) => new Date(b.date) - new Date(a.date));
+const blogQuery: QueryBuilderParams = {
+  path: `/${locale.value}/blog`,
+  sort: [{ date: -1 }],
 };
 
 const links = [
@@ -68,5 +57,5 @@ const links = [
   },
 ];
 
-useHead({ title: t("pages.home.blogs.title") });
+useHead({ title: t("pages.blogs.head.title") });
 </script>
