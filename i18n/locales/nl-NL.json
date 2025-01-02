@@ -24,6 +24,12 @@
             "head": {
                 "title": "Emiel Kwakkel - Presentaties"
             }
+        },
+        "events": {
+            "head": {
+                "title": "Emiel Kwakkel - Evenementen"
+            },
+            "presentation": "Presentatie"
         }
     },
     "generic": {
