@@ -1,6 +1,7 @@
 ---
 title: "Sogeti Frontend Lightning Talks"
 description: "Emiel presented in 20 minutes The Hidden Impact of Developers at the Sogeti Frontend Lightning Talks."
+image: "/images/events/2411-flt/2024-frontend-lightning-talks.jpg"
 talk: "2024-the-hidden-impact-of-developers"
 organisation: "Sogeti"
 event: "Frontend Lightning Talks"

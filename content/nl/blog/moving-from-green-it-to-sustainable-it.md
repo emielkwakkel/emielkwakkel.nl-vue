@@ -1,6 +1,7 @@
 ---
 title: "Van Green IT naar Sustainable IT"
 description: 'Duurzaamheid wordt vaak gedefinieerd als het voldoen aan de behoeften van het heden zonder de mogelijkheid van toekomstige generaties om in hun eigen behoeften te voorzien in gevaar te brengen. Deze definitie, uit het VN-rapport "Our Common Future" uit 1987, blijft me bij om een eenvoudige reden: het benadrukt de langetermijnverantwoordelijkheid die we hebben bij elke beslissing die we nemen.'
+image: "/images/blog/moving-from-green-it-to-sustainable-it/green-sustainable-circular-it.jpg"
 date: 2024-12-11
 head:
   meta:

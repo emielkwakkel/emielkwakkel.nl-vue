@@ -1,6 +1,7 @@
 ---
 title: "Moving from Green IT to Sustainable IT"
 description: 'Sustainability is often defined as "meeting the needs of the present without compromising the ability of future generations to meet their own needs". This definition, from the 1987 UN report "Our Common Future", has stuck with me for a simple reason: it highlights the long-term responsibility we have in every decision we make.'
+image: "/images/blog/moving-from-green-it-to-sustainable-it/green-sustainable-circular-it.jpg"
 date: 2024-12-11
 head:
   meta:

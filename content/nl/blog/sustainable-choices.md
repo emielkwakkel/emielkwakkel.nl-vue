@@ -1,6 +1,7 @@
 ---
 title: "Sustainable Frontend Development"
 description: "There is an app for that! IT als de oplossing voor elk probleem. Dat is de mindset waardoor developers die leven voor het maken van impact elke dag met frisse energie opstaan. Kijkend naar duurzaamheid kom je dan uit op IT for good, Green IT en het allesomvattende Sustainable IT."
+image: "/images/talks/24-hidden-impact/the-hidden-impact-of-developers.jpg"
 date: 2022-09-10
 head:
   meta:

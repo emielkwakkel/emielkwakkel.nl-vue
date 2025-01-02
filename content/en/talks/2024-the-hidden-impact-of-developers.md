@@ -1,6 +1,7 @@
 ---
 title: "The Hidden Impact of Developers"
 description: "When Emiel examines the footprint of his own website years ago, the shock is great. Finding sustainability important is one thing, but unconsciously the code turned out to be far from sustainable. It is the start of a mission to show what impact you can make as a developer."
+image: "/images/talks/24-hidden-impact/the-hidden-impact-of-developers.jpg"
 date: 2024
 events:
   - 2024-11-27-snic-sustainabilit

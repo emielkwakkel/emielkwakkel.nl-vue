@@ -1,6 +1,7 @@
 ---
 title: "SNiC SustainabilIT"
 description: "Emiel was the closing keynote speaker in a packed Spant! in Bussum in front of 800 students attending SNiC."
+image: "/images/events/2411-snic/SNiC-Sustainable-IT-header.jpg"
 talk: "2024-the-hidden-impact-of-developers"
 organisation: "Stichting Nationaal Informatica Congres (SNiC)"
 name: "SustainabilIT"
