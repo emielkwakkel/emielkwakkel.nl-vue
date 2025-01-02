@@ -61,7 +61,7 @@
         </template>
       </ContentList>
     </Section>
-    <Section>
+    <Section :shade="false">
       <template v-slot:header>{{ $t("pages.home.latest-blogs") }}</template>
       <ContentList :query="blogQuery">
         <template #default="{ list }">
@@ -69,6 +69,7 @@
             v-for="article in addLinkToBlogs(list)"
             :key="article._path"
             :card="article"
+            :shade="true"
           />
         </template>
         <template #not-found>

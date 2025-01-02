@@ -1,6 +1,9 @@
 <template>
   <div
-    class="w-full rounded-lg dark:bg-gray-900 bg-white dark:text-white mb-3 sm:mr-3"
+    class="w-full rounded-lg dark:text-white mb-3 sm:mr-3"
+    :class="[
+      shade ? 'dark:bg-gray-950 bg-gray-100' : 'dark:bg-gray-900 bg-white',
+    ]"
   >
     <NuxtImg
       class="rounded-t-lg"
@@ -41,7 +44,13 @@ interface Card {
   link?: Link;
 }
 
-defineProps<{
+interface Props {
+  shade?: boolean;
   card: Card | any;
-}>();
+}
+
+withDefaults(defineProps<Props>(), {
+  shade: false,
+  card: {},
+});
 </script>
