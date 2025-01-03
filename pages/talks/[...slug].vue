@@ -32,7 +32,7 @@
           <Card
             v-if="getEventBySlug(eventSlug)"
             :key="eventSlug"
-            :card="addLinkToEvents(getEventBySlug(eventSlug))"
+            :card="addReadmoreToContent(getEventBySlug(eventSlug), t)"
           />
           <div v-else>No event found for {{ eventSlug }}</div>
         </div>
@@ -47,20 +47,6 @@ const route = useRoute();
 const { data } = await useAsyncData("currentPageContent", () =>
   queryContent(route.path).findOne(),
 );
-
-const addLinkToEvents = (content: any) => {
-  if (!content.website && !content.recording) return content;
-
-  return {
-    ...content,
-    link: {
-      title: content.recording
-        ? t("events.actions.watch-recording")
-        : t("events.actions.event-website"),
-      href: content.recording ? content.recording : content.website,
-    },
-  };
-};
 
 const { data: events } = await useAsyncData(
   "eventsContent",
