@@ -12,7 +12,9 @@
           >Emiel Kwakkel</span
         >
       </a>
-      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <div
+        class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+      >
         <button
           @click="toggleMenu()"
           type="button"
@@ -39,7 +41,7 @@
         </button>
       </div>
       <div
-        class="w-full md:flex md:w-auto md:order-1"
+        class="w-full md:flex md:w-auto md:order-1 ml-auto"
         :class="{ hidden: !isMenuOpen }"
         id="navbar-sticky"
       >
@@ -50,7 +52,7 @@
             <a
               :href="`/${locale}${route.path}`"
               :class="[
-                'block py-2 px-3 rounded md:p-0',
+                'block py-3 px-3 rounded md:py-2 md:px-0',
                 `/${locale}${route.path}` === activeRoute
                   ? 'text-green-500 bg-gray-900 md:bg-transparent'
                   : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-800 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent',
@@ -58,6 +60,22 @@
             >
               {{ route.label }}
             </a>
+          </li>
+          <li>
+            <form class="mx-auto">
+              <label for="language-switcher" class="sr-only"
+                >Change Language</label
+              >
+              <select
+                id="language-switcher"
+                v-model="selectedLocale"
+                @change="setLocale(selectedLocale)"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              >
+                <option value="en">English</option>
+                <option value="nl">Dutch</option>
+              </select>
+            </form>
           </li>
         </ul>
       </div>
@@ -69,13 +87,15 @@
 import { ref } from "vue";
 import { useRoutes } from "@/composables/useRoutes";
 import { useRoute } from "vue-router";
-const { locale } = useI18n();
+import { useI18n } from "vue-i18n";
 
-// Reactive state for dropdown
+// Locales
+const { locale, setLocale } = useI18n();
+const selectedLocale = ref(locale.value);
+
+// Toggle mobile menu
 const isMenuOpen = ref(false);
-const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value;
-};
+const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
 
 // Get routes and active route
 const { routes } = useRoutes();

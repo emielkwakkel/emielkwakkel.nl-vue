@@ -77,25 +77,13 @@
         </template>
       </ContentList>
     </Section>
-    <Section>
-      <div class="dark:text-white text-gray-900">
-        {{ $t("generic.language.change") }}:
-        <button @click="setLocale('en')">
-          {{ $t("generic.language.english") }}
-        </button>
-        -
-        <button @click="setLocale('nl')">
-          {{ $t("generic.language.dutch") }}
-        </button>
-      </div>
-    </Section>
   </div>
 </template>
 
 <script setup lang="ts">
 import { addReadmoreToContent } from "@/utils/content";
 import type { QueryBuilderParams } from "@nuxt/content";
-const { t, locale, setLocale } = useI18n();
+const { t, locale } = useI18n();
 
 const eventQuery: QueryBuilderParams = {
   path: `/${locale.value}/events`,
