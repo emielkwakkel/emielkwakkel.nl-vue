@@ -12,7 +12,10 @@
         <slot name="header"></slot>
       </h2>
     </header>
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+    <div
+      class="container mx-auto w-full"
+      :class="{ 'grid grid-cols-1 md:grid-cols-2 gap-8': grid }"
+    >
       <slot></slot>
     </div>
   </section>
@@ -21,9 +24,11 @@
 <script setup lang="ts">
 interface Props {
   shade?: boolean;
+  grid?: boolean;
 }
 
 withDefaults(defineProps<Props>(), {
   shade: true,
+  grid: true,
 });
 </script>

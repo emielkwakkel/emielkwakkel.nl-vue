@@ -8,7 +8,7 @@ theme: "Impact of Frontend"
 location: "Online"
 date: "2024-11-20"
 website: "https://www.meetup.com/sogeti-frontend/events/302998087"
-recording: "https://www.youtube.com/watch?v=rauhrV5EfVE"
+youtube: "https://www.youtube.com/watch?v=rauhrV5EfVE"
 ---
 
 ## About Frontend Lightning Talks

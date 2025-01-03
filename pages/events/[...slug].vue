@@ -18,7 +18,12 @@
                 >{{ $t("content.published-in") }} {{ doc.date }}</em
               >
             </p>
-            <NuxtImg v-if="doc.image" :alt="doc.title" :src="doc.image" />
+            <NuxtImg
+              v-if="doc.image"
+              :alt="doc.title"
+              :src="doc.image"
+              class="w-full"
+            />
           </header>
           <p>
             <strong>{{ doc.description }}</strong>
@@ -26,9 +31,23 @@
           <ContentRenderer :value="doc" />
         </article>
       </section>
-      <Section v-if="doc.talk">
+      <Section v-if="doc.youtube" :grid="false">
+        <template v-slot:header>{{ $t("pages.events.recording") }}</template>
+        <iframe
+          title="recording"
+          :src="doc.youtube"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="w-full aspect-video rounded-lg shadow-lg"
+        ></iframe>
+      </Section>
+      <Section v-if="doc.talk" :shade="false">
         <template v-slot:header>{{ $t("pages.events.presentation") }}</template>
-        <Card v-if="getTalkBySlug(doc.talk)" :card="getTalkBySlug(doc.talk)" />
+        <Card
+          v-if="getTalkBySlug(doc.talk)"
+          :card="addReadmoreToContent(getTalkBySlug(doc.talk), t)"
+          :shade="true"
+        />
         <div v-else>No talk found for {{ doc.talk }}</div>
       </Section>
     </ContentDoc>
