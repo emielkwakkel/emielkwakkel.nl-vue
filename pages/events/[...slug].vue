@@ -28,10 +28,7 @@
       </section>
       <Section v-if="doc.talk">
         <template v-slot:header>{{ $t("pages.events.presentation") }}</template>
-        <Card
-          v-if="getTalkBySlug(doc.talk)"
-          :card="addReadmoreToContent(getTalkBySlug(doc.talk), t)"
-        />
+        <Card v-if="getTalkBySlug(doc.talk)" :card="getTalkBySlug(doc.talk)" />
         <div v-else>No talk found for {{ doc.talk }}</div>
       </Section>
     </ContentDoc>
@@ -52,7 +49,6 @@ const { data: talks } = await useAsyncData(
 
 const getTalkBySlug = (slug: string) =>
   talks?.value?.find((e) => {
-    console.log(e, e._path === `/${locale.value}/talks/${slug}`);
     return e._path === `/${locale.value}/talks/${slug}`;
   });
 
