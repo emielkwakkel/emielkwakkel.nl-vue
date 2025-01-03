@@ -51,7 +51,7 @@
       <ContentList :query="eventQuery">
         <template #default="{ list }">
           <Card
-            v-for="event in addLinkToEvents(list, t)"
+            v-for="event in addReadmoreToContent(list, t)"
             :key="event._path"
             :card="event"
           />
@@ -93,6 +93,7 @@
 </template>
 
 <script setup lang="ts">
+import { addReadmoreToContent } from "@/utils/content";
 import type { QueryBuilderParams } from "@nuxt/content";
 const { t, locale, setLocale } = useI18n();
 
