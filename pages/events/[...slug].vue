@@ -59,7 +59,7 @@ const links = [
   },
   {
     label: "Events",
-    to: `/${locale.value}/events  `,
+    to: `/${locale.value}/events`,
   },
   {
     label: data.value?.title || "Event",
