@@ -1,12 +1,12 @@
 <template>
-  <div
-    class="w-full rounded-lg dark:text-white"
+  <section
+    class="w-full rounded-lg dark:text-white max-w-screen-md"
     :class="[
       shade ? 'dark:bg-gray-950 bg-gray-100' : 'dark:bg-gray-900 bg-white',
     ]"
   >
     <NuxtImg
-      class="rounded-t-lg"
+      class="rounded-t-lg w-full"
       v-if="card.image"
       :alt="card.title"
       :src="card.image"
@@ -27,13 +27,10 @@
         {{ card.link.title }}
       </a>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
-const isExternalLink = (href: string): boolean => {
-  return /^https?:\/\//.test(href);
-};
 interface Link {
   href: string;
   title: string;
