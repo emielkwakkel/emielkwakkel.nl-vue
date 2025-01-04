@@ -3,31 +3,41 @@
     <ContentDoc v-slot="{ doc }">
       <Navbar />
       <Breadcrumb :links="links"></Breadcrumb>
+      <NuxtImg
+        v-if="doc.image"
+        :alt="doc.title"
+        :src="doc.image"
+        class="w-full lg:hidden"
+      />
       <section
-        class="flex container h-full px-3 dark:bg-gray-900 dark:text-gray-200 text-grey-900 mx-auto py-10"
+        class="container h-full px-3 dark:text-gray-200 text-grey-900 mx-auto py-10"
       >
-        <article class="flex flex-col w-full">
-          <header>
-            <h1
-              class="flex flex-col w-full leading-normal mb-2 mt-10 text-green-500 text-5xl font-bold"
-            >
-              {{ doc.title }}
-            </h1>
-            <p v-if="doc.date">
-              <em class="text-gray-500"
-                >{{ $t("content.published-in") }} {{ doc.date }}</em
+        <article>
+          <header class="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
+            <div>
+              <NuxtImg
+                v-if="doc.image"
+                :alt="doc.title"
+                :src="doc.image"
+                class="w-full hidden lg:block rounded-xl"
+              />
+            </div>
+            <div>
+              <h1
+                class="leading-normal mb-2 mt-10 lg:mt-0 text-green-500 text-5xl font-bold"
               >
-            </p>
-            <NuxtImg
-              v-if="doc.image"
-              :alt="doc.title"
-              :src="doc.image"
-              class="w-full"
-            />
+                {{ doc.title }}
+              </h1>
+              <p v-if="doc.date">
+                <em class="text-gray-500"
+                  >{{ $t("content.published-on") }} {{ doc.date }}</em
+                >
+              </p>
+              <p>
+                <strong>{{ doc.description }}</strong>
+              </p>
+            </div>
           </header>
-          <p>
-            <strong>{{ doc.description }}</strong>
-          </p>
           <ContentRenderer :value="doc" />
         </article>
       </section>
@@ -41,7 +51,7 @@
           class="w-full aspect-video rounded-lg shadow-lg"
         ></iframe>
       </Section>
-      <Section v-if="doc.talk" :shade="false">
+      <Section v-if="doc.talk" :shade="false" :grid="false">
         <template v-slot:header>{{ $t("pages.events.presentation") }}</template>
         <Card
           v-if="getTalkBySlug(doc.talk)"
