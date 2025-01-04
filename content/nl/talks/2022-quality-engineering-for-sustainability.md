@@ -1,6 +1,7 @@
 ---
 title: "Quality Engineering for Sustainability"
 description: "Klimaatverandering is een feit, en het is aan ons om deel uit te maken van de oplossing. Met het stijgende energieverbruik van IT en de toenemende vraag naar schaarse materialen moeten we onze zwakke punten erkennen en de overstap maken naar duurzame IT."
+image: "/images/talks/22-quality-engineering/2022-quality-engineering-for-sustainability.jpg"
 date: 2022
 events:
   - 2022-10-06-qx-day

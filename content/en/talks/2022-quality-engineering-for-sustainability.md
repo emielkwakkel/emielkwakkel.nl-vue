@@ -1,6 +1,7 @@
 ---
 title: "Quality Engineering for Sustainability"
 description: "Climate change is a fact, it is up to us to be part of the solution. With IT energy consumption rising and increasing demand for scarce materials we need to acknowledge our weak points and move to Sustainable IT."
+image: "/images/talks/22-quality-engineering/2022-quality-engineering-for-sustainability.jpg"
 date: 2022
 events:
   - 2022-10-06-qx-day

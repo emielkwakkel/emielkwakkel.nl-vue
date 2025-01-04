@@ -1,6 +1,7 @@
 ---
 title: "Holistic Approach to Sustainable IT"
 description: "In de wereld van vandaag zijn milieuoverwegingen belangrijker dan ooit, en de IT-industrie moet duurzame praktijken prioriteit geven. Mark van der Walle en Emiel Kwakkel zullen de urgentie van het aannemen van duurzame praktijken in IT belichten. Hun presentatie heeft als doel de noodzaak voor verandering te benadrukken en de basis te leggen voor een groenere en meer verantwoorde toekomst."
+image: "/images/talks/23-holistic-aproach/2024-holistic-approach-to-sustainable-it.jpg"
 date: 2023
 events:
   - 2023-09-19-qx-day
