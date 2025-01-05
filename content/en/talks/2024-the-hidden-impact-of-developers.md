@@ -1,6 +1,6 @@
 ---
 title: "The Hidden Impact of Developers"
-description: "When Emiel examines the footprint of his own website years ago, the shock is great. Finding sustainability important is one thing, but unconsciously the code turned out to be far from sustainable. It is the start of a mission to show what impact you can make as a developer."
+description: "Years ago, when Emiel examined the environmental footprint of his own website, he was shocked. Valuing sustainability is one thing, but he discovered that his code was far from sustainable. This realization marked the beginning of his mission to demonstrate the impact developers can make."
 image: "/images/talks/24-hidden-impact/the-hidden-impact-of-developers.jpg"
 date: 2024
 events:
@@ -8,4 +8,4 @@ events:
   - 2024-11-20-frontend-lightning-talks
 ---
 
-From knowledge of the Green Software Principles to common sense, awareness in IT is necessary. Converting acquired insights into action is the next step to minimize the growing energy consumption and waste of scarce raw materials. In this keynote you will receive tools to contribute to making the IT that we all rely on so much more sustainable.
+From understanding the Green Software Principles to applying common sense, raising awareness in IT is essential. The next step is turning insights into action to reduce the growing energy consumption and the waste of scarce resources. In this keynote, you’ll gain practical tools to help make the IT systems we all depend on more sustainable.
