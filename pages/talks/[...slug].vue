@@ -19,7 +19,7 @@
                 v-if="doc.image"
                 :alt="doc.title"
                 :src="doc.image"
-                class="w-full hidden lg:mt-4 lg:block rounded-xl"
+                class="w-full hidden lg:mt-4 lg:block rounded-xl lg:mb-12"
               />
             </div>
             <div>
