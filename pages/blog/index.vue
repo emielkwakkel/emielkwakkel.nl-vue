@@ -34,6 +34,7 @@
         </ContentList>
       </Section>
     </div>
+    <Footer />
   </div>
 </template>
 

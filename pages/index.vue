@@ -77,6 +77,7 @@
         </template>
       </ContentList>
     </Section>
+    <Footer />
   </div>
 </template>
 

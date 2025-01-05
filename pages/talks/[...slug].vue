@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen dark:bg-gray-900 pb-10 bg-white">
+  <div class="min-h-screen dark:bg-gray-900 bg-white">
     <ContentDoc v-slot="{ doc }">
       <Navbar />
       <Breadcrumb :links="links"></Breadcrumb>
@@ -53,6 +53,7 @@
         </div>
       </Section>
     </ContentDoc>
+    <Footer />
   </div>
 </template>
 
