@@ -13,7 +13,7 @@
       </h2>
     </header>
     <div
-      class="container mx-auto w-full"
+      class="container mx-auto px-8 md:px-0"
       :class="{ 'grid grid-cols-1 md:grid-cols-2 gap-8': grid }"
     >
       <slot></slot>
