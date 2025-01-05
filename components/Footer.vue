@@ -67,8 +67,11 @@
               >TailWind CSS</a
             >
           </li>
-          <li>
+          <li class="mb-4">
             <a href="https://vuejs.org/" class="hover:underline">Vue.js</a>
+          </li>
+          <li>
+            <a href="https://nuxt.com/" class="hover:underline">Nuxt</a>
           </li>
         </ul>
       </div>
