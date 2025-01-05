@@ -5,6 +5,7 @@ image: "/images/talks/23-holistic-aproach/2024-holistic-approach-to-sustainable-
 date: 2023
 events:
   - 2023-09-19-qx-day
+  - 2023-10-12-frontmania
 ---
 
 In deze presentatie ontdek je de kracht van het omarmen van schaarste als katalysator voor duurzame actie, waarbij de noodzaak van een holistische benadering wordt erkend. We benadrukken het belang van het vermijden van de valkuilen van geïsoleerde groene initiatieven die het ecologische probleem slechts elders naartoe verschuiven in plaats van het op te lossen. Door duurzaamheidsprincipes te integreren in de gehele levenscyclus van IT-producten en -diensten, kunnen we effectief milieukwesties aanpakken zonder onbedoeld nieuwe problemen te creëren.

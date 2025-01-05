@@ -5,6 +5,7 @@ image: "/images/talks/23-holistic-aproach/2024-holistic-approach-to-sustainable-
 date: 2023
 events:
   - 2023-09-19-qx-day
+  - 2023-10-12-frontmania
 ---
 
 In this talk, you'll discover the power of embracing scarcity as a catalyst for sustainable action, recognizing the need for a holistic approach. We will emphasize the importance of avoiding the pitfalls of isolated green initiatives that merely shift the ecological problem elsewhere, rather than solving it. By integrating sustainability principles into the entire lifecycle of IT products and services, we can effectively address environmental challenges without inadvertently creating new ones.
