@@ -4,6 +4,7 @@ description: "Klimaatverandering is een feit, en het is aan ons om deel uit te m
 image: "/images/talks/22-quality-engineering/2022-quality-engineering-for-sustainability.jpg"
 date: 2022
 events:
+  - 2022-05-03-frontend-lightning-talks
   - 2022-10-06-qx-day
 ---
 

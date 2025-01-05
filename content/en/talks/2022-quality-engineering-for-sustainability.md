@@ -4,6 +4,7 @@ description: "Climate change is a fact, it is up to us to be part of the solutio
 image: "/images/talks/22-quality-engineering/2022-quality-engineering-for-sustainability.jpg"
 date: 2022
 events:
+  - 2022-05-03-frontend-lightning-talks
   - 2022-10-06-qx-day
 ---
 
