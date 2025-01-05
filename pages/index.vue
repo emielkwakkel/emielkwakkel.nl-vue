@@ -3,6 +3,7 @@
     <Navbar />
     <section
       class="flex container h-screen px-3 dark:text-gray-200 mx-auto lg:p-20"
+      style="min-height: 500px"
     >
       <section
         class="flex flex-col w-full sm:w-3/5 justify-center text-center md:text-left"
