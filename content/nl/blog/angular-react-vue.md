@@ -1,6 +1,7 @@
 ---
 title: "Angular, React of Vue?"
 description: 'Angular, React of Vue? De meest gestelde vraag binnen de front-end wereld, waar nog talloze blogs en vlogs over gemaakt zullen worden. De vragen "Welk framework moet ik leren?" en "Ben jij een Angular/Vue/React developer?" suggereren dat je als ontwikkelaar moet kiezen, of dat er via de opdracht waar je op zit voor je gekozen wordt. Het is tijd om die mindset te veranderen.'
+image: "/images/blog/angular-react-vue/angular-react-vue.jpg"
 date: 2021-02-19
 head:
   meta:

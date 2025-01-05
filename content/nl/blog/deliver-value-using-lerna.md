@@ -1,6 +1,7 @@
 ---
 title: "Meer waarde met Lerna"
 description: "Grote organisaties doen steeds meer moeite om zich aan te passen aan veeleisende markten en zich te richten op hoogwaardige klantreizen. In een tijd waarin startups, bevrijd van de technologische complexiteit die is opgebouwd door jaren van iteratieve ontwikkeling, markten verstoren, moeten organisaties zich verbeteren. Door een moderne aanpak kan de tijd die wordt besteed aan het onderhouden van de ontwikkelomgeving en ondersteunende tooling worden verminderd."
+image: "/images/blog/deliver-value-using-lerna/lerna-introduction.jpg"
 date: 2018-10-15
 head:
   meta:

@@ -1,6 +1,7 @@
 ---
 title: "Deliver more value using Lerna"
 description: "Big organisations are increasing their efforts to adjust to demanding markets and focus on high quality customer journeys. In a time where startups, freed of collected technological complexity caused by years of iterative development, are disrupting the markets, organisations have to step up their game. By taking a modern approach time spent on maintaining the whole development environment and supporting tooling can be cut."
+image: "/images/blog/deliver-value-using-lerna/lerna-introduction.jpg"
 date: 2018-10-15
 head:
   meta:
