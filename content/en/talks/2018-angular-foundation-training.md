@@ -1,7 +1,7 @@
 ---
 title: "Angular Foundation Training"
 description: "This training offers a hands-on introduction to Angular, covering its core concepts, TypeScript integration, and practical applications. Over three days, you’ll learn to structure apps, generate components and modules with the CLI, and implement navigation. You’ll explore TypeScript features like inheritance and typing, fetch and display data, and work with Reactive Forms and Observables. By building a functional foosball app connected to a Node.js backend, you’ll gain the skills to create scalable and dynamic Angular applications."
-image: "/images/talks/16-angular-fundamentals/2018-angular-fundamentals.jpg"
+image: "/images/talks/18-angular-fundamentals/2018-angular-fundamentals.jpg"
 date: 2018
 sections:
   - day1:
