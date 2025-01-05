@@ -4,7 +4,7 @@
             "head": {
                 "title": "Emiel Kwakkel - Sustainable IT"
             },
-            "latest-blogs": "Laatste blogs",
+            "latest-blogs": "Laatste blog artikelen",
             "talks": "Presentaties over Sustainable IT",
             "events": "Publieke evenementen",
             "introduction": {
@@ -23,7 +23,9 @@
         "talks": {
             "head": {
                 "title": "Emiel Kwakkel - Presentaties"
-            }
+            },
+            "sections": "Presentatie onderdelen",
+            "events": "Gepresenteerd bij"
         },
         "events": {
             "head": {

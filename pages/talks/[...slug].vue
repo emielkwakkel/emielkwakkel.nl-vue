@@ -41,8 +41,17 @@
           <ContentRenderer :value="doc" />
         </article>
       </section>
-      <Section v-if="doc.events && events && events.length > 0">
-        <template v-slot:header>{{ $t("pages.home.events") }}</template>
+      <Section v-if="doc.sections">
+        <template v-slot:header>{{ $t("pages.talks.sections") }}</template>
+        <div v-for="block in doc.sections">
+          <Card :key="block.title" :card="getCard(block)" />
+        </div>
+      </Section>
+      <Section
+        v-if="doc.events && events && events.length > 0"
+        :shade="!doc.sections"
+      >
+        <template v-slot:header>{{ $t("pages.talks.events") }}</template>
         <div v-for="eventSlug in doc.events">
           <Card
             v-if="getEventBySlug(eventSlug)"
@@ -63,6 +72,19 @@ const route = useRoute();
 const { data } = await useAsyncData("currentPageContent", () =>
   queryContent(route.path).findOne(),
 );
+
+interface Block {
+  title: string;
+  description: string;
+}
+
+const getCard = (block: Block) => ({
+  title: getTitle(block),
+  description: getDescription(block),
+});
+const getTitle = (block: Block) => Object.values(block)[0]?.title || "";
+const getDescription = (block: Block) =>
+  Object.values(block)[0]?.description || "";
 
 const { data: events } = await useAsyncData(
   "eventsContent",
