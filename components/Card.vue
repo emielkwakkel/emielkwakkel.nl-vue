@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full rounded-lg dark:text-white max-w-screen-md"
+    class="w-full rounded-lg dark:text-white max-w-screen-md flex flex-col justify-between h-full"
     :class="[
       shade ? 'dark:bg-gray-950 bg-gray-100' : 'dark:bg-gray-900 bg-white',
     ]"
@@ -11,18 +11,27 @@
       :alt="card.title"
       :src="card.image"
     ></NuxtImg>
-    <div class="p-5 pb-10">
+    <div class="p-5">
       <h3 class="leading-loose mb-2 md:h-20 lg:h-14 xl:h-14">
         <span class="text-2xl font-bold text-green-500">{{ card.title }}</span>
         <span class="text-gray-500"> <br />{{ card.date }}</span>
       </h3>
-      <h4 class="sm:pt-3 mb-8">
+      <p class="sm:pt-3">
         {{ card.description }}
-      </h4>
+      </p>
+    </div>
+    <div
+      v-if="card.link"
+      class="flex w-full p-5 border-t-4 border-dotted"
+      :class="[
+        shade
+          ? 'dark:border-gray-800 border-white'
+          : 'dark:border-gray-950 border-gray-100',
+      ]"
+    >
       <a
-        v-if="card.link"
         :href="card.link.href"
-        class="bg-blue-300 text-gray-800 font-bold rounded-full py-4 px-8"
+        class="bg-blue-300 w-full text-center text-gray-800 font-bold rounded-xl py-4 px-8"
       >
         {{ card.link.title }}
       </a>
