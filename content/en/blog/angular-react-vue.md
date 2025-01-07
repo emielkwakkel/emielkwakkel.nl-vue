@@ -1,4 +1,5 @@
 ---
+status: "PUBLISHED"
 title: "Angular, React of Vue?"
 description: "Angular, React of Vue? The most frequently asked question in the front-end world, and one that will inspire countless blogs and vlogs. Questions like “Which framework should I learn?” and “Are you an Angular/Vue/React developer?” suggest that as a developer, you need to pick one—or that the choice is made for you based on the project you’re working on. It’s time to change that mindset."
 image: "/images/blog/angular-react-vue/angular-react-vue.jpg"
@@ -12,7 +13,7 @@ head:
     - name: "author"
       content: "Emiel Kwakkel"
     - name: "copyright"
-      content: "© 2024 Emiel Kwakkel"
+      content: "© 2025 Emiel Kwakkel"
 ---
 
 ## It's time to change the mindset.

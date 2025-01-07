@@ -1,4 +1,5 @@
 ---
+status: "PUBLISHED"
 title: "Sustainable Frontend Development"
 description: "There is an app for that! IT als de oplossing voor elk probleem. Dat is de mindset waardoor developers die leven voor het maken van impact elke dag met frisse energie opstaan. Kijkend naar duurzaamheid kom je dan uit op IT for good, Green IT en het allesomvattende Sustainable IT."
 image: "/images/talks/24-hidden-impact/the-hidden-impact-of-developers.jpg"
@@ -12,7 +13,7 @@ head:
     - name: "author"
       content: "Emiel Kwakkel"
     - name: "copyright"
-      content: "© 2024 Emiel Kwakkel"
+      content: "© 2025 Emiel Kwakkel"
 ---
 
 ## Hoe maak je de juiste keuzes?
