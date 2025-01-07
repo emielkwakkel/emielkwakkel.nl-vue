@@ -29,7 +29,7 @@
             />
           </template>
           <template #not-found>
-            <p>No events found.</p>
+            <p>No blog articles found.</p>
           </template>
         </ContentList>
       </Section>
@@ -40,11 +40,16 @@
 
 <script setup lang="ts">
 import type { QueryBuilderParams } from "@nuxt/content";
+const runtimeConfig = useRuntimeConfig();
 const { t, locale } = useI18n();
 
 const blogQuery: QueryBuilderParams = {
   path: `/${locale.value}/blog`,
   sort: [{ date: -1 }],
+  where:
+    runtimeConfig.public.nuxtEnv === "development"
+      ? []
+      : [{ status: "PUBLISHED" }],
 };
 
 const links = [

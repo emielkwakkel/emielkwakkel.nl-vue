@@ -85,6 +85,8 @@
 <script setup lang="ts">
 import { addReadmoreToContent } from "@/utils/content";
 import type { QueryBuilderParams } from "@nuxt/content";
+const runtimeConfig = useRuntimeConfig();
+
 const { t, locale } = useI18n();
 
 const eventQuery: QueryBuilderParams = {
@@ -97,6 +99,10 @@ const blogQuery: QueryBuilderParams = {
   path: `/${locale.value}/blog`,
   limit: 2,
   sort: [{ date: -1 }],
+  where:
+    runtimeConfig.public.nuxtEnv === "development"
+      ? []
+      : [{ status: "PUBLISHED" }],
 };
 
 useHead({ title: t("pages.home.head.title") });

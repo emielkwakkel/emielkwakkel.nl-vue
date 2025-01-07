@@ -11,6 +11,11 @@ export default defineNuxtConfig({
   image: {
     quality: 80,
   },
+  runtimeConfig: {
+    public: {
+      nuxtEnv: "production", // Defaults to production, overwrite in .env like this 'NUXT_PUBLIC_NUXT_ENV=development'
+    },
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
