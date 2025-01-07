@@ -6,17 +6,25 @@ article a {
   text-decoration: underline;
 }
 
-article p {
+article p, article ul li {
   padding: 0 0 20px 0;
   line-height: 1.8em;
   font-size: 1.2em;
 }
 
-article h2 {
-  margin-top: 20px;
+article ul {
+  padding: 0 0 0 26px;
 }
 
-article h2 a {
+article ul li {
+  list-style-type: disc;
+}
+
+article h2, article h3 {
+  margin: 42px 0 26px;
+}
+
+article h2 a, article h3 a {
   text-decoration: none;
   cursor: default;
 }
