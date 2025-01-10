@@ -1,9 +1,9 @@
 ---
-status: "DRAFT"
+status: "PUBLISHED"
 title: "The Price of Impact: Rethinking Green Web Design"
 description: "My journey to a sustainable website started with a radical goal: minimize its carbon footprint at all costs. I succeeded, reducing emissions from a staggering 5 grams to just 0.06 grams of CO2 per pageview. But during the holidays, I realized something critical—my ultra-minimalist site, while sustainable, wasn’t delivering its message effectively. Visitors needed more than plain text to connect with my content and mission."
 image: "/images/blog/price-of-impact/100-procent-green-web-design.jpg"
-date: 2025-01-07
+date: 2025-01-10
 head:
   meta:
     - name: "keywords"
@@ -30,24 +30,13 @@ Research backs this up. According to a report by the World Bank, the global IT s
 
 ## Designing for Purpose and Usability
 
-![Updated website](/images/blog/price-of-impact/updated-website.jpg)
+![Updated website](/images/blog/price-of-impact/updated-website.jpg){float="right"}
 In updating my website, I focused on finding a middle ground. The new design embraces modern web standards while keeping performance at the forefront. Here’s what changed:
 
-### 1. Professional Content Display
-
-The updated site includes sections for photos of my talks, presentations, and embedded YouTube videos of event recordings. These elements are carefully optimized, ensuring they load efficiently while still engaging visitors.
-
-### 2. Responsive Design
-
-I ensured the site looks great on both mobile devices and larger screens. Optimized layouts and typography make the content easy to read and professional in appearance.
-
-### 3. Balanced Media Usage
-
-While the site now incorporates images and videos, each media asset is carefully compressed and optimized for fast loading times. I use formats like WebP for images and embed YouTube videos in a way that defers loading until a user interacts with them.
-
-### 4. Enhanced Accessibility
-
-The redesign also included accessibility improvements, ensuring that users with different needs can navigate and interact with the site.
+- **Professional Content Display:** The updated site includes sections for photos of my talks, presentations, and embedded YouTube videos of event recordings. These elements are carefully optimized, ensuring they load efficiently while still engaging visitors.
+- **Responsive Design:** I ensured the site looks great on both mobile devices and larger screens. Optimized layouts and typography make the content easy to read and professional in appearance.
+- **Balanced Media Usage:** While the site now incorporates images and videos, each media asset is carefully compressed and optimized for fast loading times. I use formats like WebP for images and embed YouTube videos in a way that defers loading until a user interacts with them.
+- **Enhanced Accessibility:** The redesign also included accessibility improvements, ensuring that users with different needs can navigate and interact with the site.
 
 ## The Trade-Off: From 0.06 to 0.21 Grams
 
@@ -57,17 +46,11 @@ What matters is the potential for greater impact. The updated design makes my co
 
 ## Lessons Learned
 
-### Balance is Key
+- **Balance is Key:** Sustainability isn’t about perfection—it’s about making thoughtful trade-offs. A balance between efficiency and usability often achieves the best results.
 
-Sustainability isn’t about perfection—it’s about making thoughtful trade-offs. A balance between efficiency and usability often achieves the best results.
+- **Impact Over Perfection:** The goal of reducing emissions shouldn’t compromise a site’s ability to fulfill its purpose. A slightly higher carbon footprint is acceptable if it helps spread a valuable message.
 
-### Impact Over Perfection
-
-The goal of reducing emissions shouldn’t compromise a site’s ability to fulfill its purpose. A slightly higher carbon footprint is acceptable if it helps spread a valuable message.
-
-### Optimization Matters
-
-Even with added media, there are ways to keep a website efficient. Compressing images, deferring non-essential scripts, and using green hosting providers are all steps in the right direction.
+- **Optimization Matters:** Even with added media, there are ways to keep a website efficient. Compressing images, deferring non-essential scripts, and using green hosting providers are all steps in the right direction.
 
 ## Final Thoughts
 
