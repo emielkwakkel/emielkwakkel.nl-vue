@@ -32,6 +32,13 @@
             </div>
           </header>
           <ContentRenderer :value="doc" />
+          <a
+            v-if="doc.website"
+            :href="doc.website"
+            class="bg-blue-300 text-gray-800 font-bold rounded-full py-4 px-8"
+          >
+            {{ $t("pages.event.website") }}
+          </a>
         </article>
       </section>
       <Section v-if="doc.youtube" :grid="false">
@@ -44,14 +51,9 @@
           class="w-full aspect-video rounded-lg shadow-lg"
         ></iframe>
       </Section>
-      <Section v-if="doc.talk" :shade="false" :grid="false">
+      <Section v-if="talk" :shade="false" :grid="false">
         <template v-slot:header>{{ $t("pages.events.presentation") }}</template>
-        <Card
-          v-if="getTalkBySlug(doc.talk)"
-          :card="addReadmoreToContent(getTalkBySlug(doc.talk), t)"
-          :shade="true"
-        />
-        <div v-else>No talk found for {{ doc.talk }}</div>
+        <Card :card="addReadmoreToContent(talk, t)" :shade="true" />
       </Section>
     </ContentDoc>
     <Footer />
@@ -64,41 +66,21 @@ const route = useRoute();
 const { data } = await useAsyncData("currentPageContent", () =>
   queryContent(route.path).findOne(),
 );
-console.log(data.value);
-const definitions = [
-  {
-    title: t("content.published-on"),
-    description: data.value?.date,
-  },
-];
+const { data: talk } = await useAsyncData("talksContent", async () => {
+  const results = await queryContent(
+    `/${locale.value}/talks/${data.value?.talk}`,
+  ).find();
+  return results.length ? results[0] : null;
+});
 
-data.value?.theme &&
-  definitions.push({
-    title: t("pages.event.theme"),
-    description: data.value.theme,
-  });
+const fields = ["date", "organisation", "theme", "location", "description"];
 
-data.value?.location &&
-  definitions.push({
-    title: t("pages.event.location"),
-    description: data.value.location,
-  });
-
-data.value?.description &&
-  definitions.push({
-    title: t("pages.event.description"),
-    description: data.value.description,
-  });
-
-const { data: talks } = await useAsyncData(
-  "talksContent",
-  async () => await queryContent(`/${locale.value}/talks`).find(),
-);
-
-const getTalkBySlug = (slug: string) =>
-  talks?.value?.find((e) => {
-    return e._path === `/${locale.value}/talks/${slug}`;
-  });
+const definitions = fields
+  .filter((field) => data.value?.[field]) // Include only fields with values
+  .map((field) => ({
+    title: t(`pages.event.${field}`),
+    description: data.value?.[field],
+  }));
 
 const links = [
   {

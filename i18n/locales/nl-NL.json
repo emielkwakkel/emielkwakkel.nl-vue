@@ -28,7 +28,10 @@
             "events": "Gepresenteerd bij"
         },
         "event": {
+            "date": "Datum",
             "description": "Beschrijving",
+            "website": "Evenement website",
+            "organisation": "Organisatie",
             "theme": "Thema",
             "location": "Locatie"
         },

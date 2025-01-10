@@ -28,7 +28,10 @@
             "events": "Presented at"
         },
         "event": {
+            "date": "Date",
             "description": "Description",
+            "website": "Event website",
+            "organisation": "Organisation",
             "theme": "Theme",
             "location": "Location"
         },
