@@ -12,7 +12,7 @@
       :src="card.image"
     ></NuxtImg>
     <div class="p-5">
-      <h3 class="leading-loose mb-2 md:h-20 lg:h-14 xl:h-14">
+      <h3 class="leading-loose mb-2">
         <span class="text-2xl font-bold text-green-500">{{ card.title }}</span>
         <span class="text-gray-500"> <br />{{ card.date }}</span>
       </h3>
