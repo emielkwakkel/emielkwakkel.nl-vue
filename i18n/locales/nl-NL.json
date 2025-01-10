@@ -27,6 +27,11 @@
             "sections": "Presentatie onderdelen",
             "events": "Gepresenteerd bij"
         },
+        "event": {
+            "description": "Beschrijving",
+            "theme": "Thema",
+            "location": "Locatie"
+        },
         "events": {
             "head": {
                 "title": "Emiel Kwakkel - Evenementen"

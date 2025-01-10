@@ -27,6 +27,11 @@
             "sections": "Talk sections",
             "events": "Presented at"
         },
+        "event": {
+            "description": "Description",
+            "theme": "Theme",
+            "location": "Location"
+        },
         "events": {
             "head": {
                 "title": "Emiel Kwakkel - Events"
