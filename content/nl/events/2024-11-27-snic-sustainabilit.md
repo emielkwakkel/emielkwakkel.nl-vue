@@ -11,14 +11,14 @@ date: "2024-11-27"
 website: "https://sustainabilit.snic.nl/"
 ---
 
-## About the event
+## Over het evenement
 
-SNiC is the largest national Computer Science and Artificial Intelligence conference, organized for and by students. This edition's theme of the conference is SustainabilIT, where we focus on what the IT sector can do and has done when it comes to sustainable technology. We focus on the technology of the past, the technology of today and the technology of the future.
+SNiC is de grootste nationale conferentie op het gebied van Computer Science en Artificial Intelligence, georganiseerd voor en door studenten. Het thema van deze editie is SustainabilIT, waarbij we ons richten op wat de IT-sector kan en heeft gedaan op het gebied van duurzame technologie. We richten ons op de technologie van het verleden, de technologie van vandaag en de technologie van de toekomst.
 
-## About SNiC
+## Over SNiC
 
-SNiC is an acronym for Stichting Nationaal Informatica Congres (Foundation National Computer Science Conference). This organisation was established in 2004 with the purpose of stimulating interest in knowledge of information and communication technology, and to promote contact between students and the business world. 9 study associations from 7 different cities are affiliated with SNiC. Every year, a conference with an IT-related subject is organised and for each conference, one of those 9 study associations is chosen to take care of the organisation. This year's SNiC was organised on November 27th, 2024 by students from via, the study association for Information Sciences at the University of Amsterdam.
+SNiC staat voor Stichting Nationaal Informatica Congres. Deze organisatie werd opgericht in 2004 met als doel de interesse in kennis van informatie- en communicatietechnologie te stimuleren en het contact tussen studenten en het bedrijfsleven te bevorderen. Negen studieverenigingen uit zeven verschillende steden zijn aangesloten bij SNiC. Elk jaar wordt een conferentie met een IT-gerelateerd onderwerp georganiseerd, waarbij één van de negen studieverenigingen verantwoordelijk is voor de organisatie. De SNiC van dit jaar werd op 27 november 2024 georganiseerd door studenten van via, de studievereniging voor Informatiekunde aan de Universiteit van Amsterdam.
 
-## Audience
+## Doelgroep
 
-Visitors are enthusiastic Computer Science and Artificial Intelligence bachelor and master students from all over the country. Over the past years, the conference has grown considerably. Where in 2017 the conference was visited by 450 students, we expect around 850 visitors in 2024. Various talks were held at the conference by speakers from both the business world and the academic world. The students have been challenged to dive into a specific topic from different perspectives. We want to inspire them and invite them to think further than their current views.
+Bezoekers zijn enthousiaste bachelor- en masterstudenten Computer Science en Artificial Intelligence uit het hele land. De conferentie is de afgelopen jaren aanzienlijk gegroeid. Waar in 2017 de conferentie werd bezocht door 450 studenten, verwachten we in 2024 ongeveer 850 bezoekers. Tijdens de conferentie zijn er diverse lezingen gehouden door sprekers uit zowel de academische wereld als het bedrijfsleven. Studenten zijn uitgedaagd om een specifiek onderwerp vanuit verschillende perspectieven te verkennen. We willen hen inspireren en uitnodigen om verder te denken dan hun huidige inzichten.
