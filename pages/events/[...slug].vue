@@ -28,62 +28,7 @@
               >
                 {{ doc.title }}
               </h1>
-              <div class="mt-6 border-t border-gray-100 dark:border-gray-800">
-                <dl class="divide-y divide-gray-100 dark:divide-gray-800">
-                  <div
-                    class="px-2 py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0"
-                    v-if="doc.date"
-                  >
-                    <dt class="font-bold text-gray-700 dark:text-gray-200">
-                      {{ $t("content.published-on") }}
-                    </dt>
-                    <dd
-                      class="mt-1 text-gray-900 dark:text-white sm:col-span-2 sm:mt-0"
-                    >
-                      {{ doc.date }}
-                    </dd>
-                  </div>
-                  <div
-                    class="px-2 py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0"
-                    v-if="doc.theme"
-                  >
-                    <dt class="font-bold text-gray-700 dark:text-gray-200">
-                      {{ $t("pages.event.theme") }}
-                    </dt>
-                    <dd
-                      class="mt-1 text-gray-900 dark:text-white sm:col-span-2 sm:mt-0"
-                    >
-                      {{ doc.theme }}
-                    </dd>
-                  </div>
-                  <div
-                    class="px-2 py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0"
-                    v-if="doc.location"
-                  >
-                    <dt class="font-bold text-gray-700 dark:text-gray-200">
-                      {{ $t("pages.event.location") }}
-                    </dt>
-                    <dd
-                      class="mt-1 text-gray-900 dark:text-white sm:col-span-2 sm:mt-0"
-                    >
-                      {{ doc.location }}
-                    </dd>
-                  </div>
-                  <div
-                    class="px-2 py-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0"
-                    v-if="doc.description"
-                  >
-                    <dt class="font-bold text-gray-700 dark:text-gray-200">
-                      {{ $t("pages.event.description") }}
-                    </dt>
-                    <dd
-                      class="mt-1 text-gray-900 dark:text-white sm:col-span-2 sm:mt-0"
-                    >
-                      {{ doc.description }}
-                    </dd>
-                  </div>
-                </dl>
-              </div>
+              <DefinitionList :content="definitions" />
             </div>
           </header>
           <ContentRenderer :value="doc" />
@@ -119,6 +64,31 @@ const route = useRoute();
 const { data } = await useAsyncData("currentPageContent", () =>
   queryContent(route.path).findOne(),
 );
+console.log(data.value);
+const definitions = [
+  {
+    title: t("content.published-on"),
+    description: data.value?.date,
+  },
+];
+
+data.value?.theme &&
+  definitions.push({
+    title: t("pages.event.theme"),
+    description: data.value.theme,
+  });
+
+data.value?.location &&
+  definitions.push({
+    title: t("pages.event.location"),
+    description: data.value.location,
+  });
+
+data.value?.description &&
+  definitions.push({
+    title: t("pages.event.description"),
+    description: data.value.description,
+  });
 
 const { data: talks } = await useAsyncData(
   "talksContent",
