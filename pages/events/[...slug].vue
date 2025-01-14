@@ -41,6 +41,9 @@
           </a>
         </article>
       </section>
+      <Section v-if="doc.testimonial" :grid="false">
+        <Testimonial :content="doc.testimonial" />
+      </Section>
       <Section v-if="doc.youtube" :grid="false">
         <template v-slot:header>{{ $t("pages.events.recording") }}</template>
         <iframe

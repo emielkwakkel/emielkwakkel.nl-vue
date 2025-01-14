@@ -62,7 +62,10 @@
         </template>
       </ContentList>
     </Section>
-    <Section :shade="false">
+    <Section :shade="false" :grid="false" v-if="testimonials?.length">
+      <TestimonialCarousel :testimonials="testimonials" />
+    </Section>
+    <Section>
       <template v-slot:header>{{ $t("pages.home.latest-blogs") }}</template>
       <ContentList :query="blogQuery">
         <template #default="{ list }">
@@ -70,7 +73,6 @@
             v-for="article in addReadmoreToContent(list, t)"
             :key="article._path"
             :card="article"
-            :shade="true"
           />
         </template>
         <template #not-found>
@@ -85,6 +87,7 @@
 <script setup lang="ts">
 import { addReadmoreToContent } from "@/utils/content";
 import type { QueryBuilderParams } from "@nuxt/content";
+import type { Testimonial } from "~/components/Testimonial.vue";
 const runtimeConfig = useRuntimeConfig();
 
 const { t, locale } = useI18n();
@@ -94,6 +97,18 @@ const eventQuery: QueryBuilderParams = {
   limit: 2,
   sort: [{ date: -1 }],
 };
+
+const { data: testimonials } = await useAsyncData("testimonials", async () => {
+  const events = await queryContent(`/${locale.value}/events`)
+    .where({ testimonial: { $exists: true } })
+    .sort({ date: -1 })
+    .only(["testimonial"])
+    .find();
+
+  return events
+    .map((event) => event.testimonial)
+    .filter((testimonial): testimonial is Testimonial => Boolean(testimonial));
+});
 
 const blogQuery: QueryBuilderParams = {
   path: `/${locale.value}/blog`,

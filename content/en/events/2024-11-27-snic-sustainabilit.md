@@ -9,6 +9,12 @@ theme: "Sustainable IT"
 location: "Spant!, Bussum"
 date: "2024-11-27"
 website: "https://sustainabilit.snic.nl/"
+testimonial:
+  name: "Dionne Gantzert"
+  function: "Organiser"
+  organisation: "SNiC"
+  avatar: "/images/events/2411-snic/dionne-gantzert-avatar.jpeg"
+  testimonial: "Emiel’s keynote on the Hidden Impact of Developers was truly inspiring, as he shared his personal journey toward creating more sustainable web solutions. His practical insights and passion for sustainability and IT motivated the students to rethink their approach to IT and empowered them to make a positive difference in the tech world!"
 ---
 
 ## About the event
