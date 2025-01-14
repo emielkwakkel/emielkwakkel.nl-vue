@@ -98,17 +98,30 @@ const eventQuery: QueryBuilderParams = {
   sort: [{ date: -1 }],
 };
 
-const { data: testimonials } = await useAsyncData("testimonials", async () => {
-  const events = await queryContent(`/${locale.value}/events`)
-    .where({ testimonial: { $exists: true } })
-    .sort({ date: -1 })
-    .only(["testimonial"])
-    .find();
+const testimonials = ref<Testimonial[]>([]);
 
-  return events
-    .map((event) => event.testimonial)
-    .filter((testimonial): testimonial is Testimonial => Boolean(testimonial));
-});
+// Watch for locale changes and fetch testimonials data
+watch(
+  () => locale.value,
+  async () => {
+    const { data } = await useAsyncData("testimonials", async () => {
+      const events = await queryContent(`/${locale.value}/events`)
+        .where({ testimonial: { $exists: true } })
+        .sort({ date: -1 })
+        .only(["testimonial"])
+        .find();
+
+      return events
+        .map((event) => event.testimonial)
+        .filter((testimonial): testimonial is Testimonial =>
+          Boolean(testimonial),
+        );
+    });
+
+    testimonials.value = data.value || []; // Assign fetched testimonials to the ref
+  },
+  { immediate: true }, // Trigger immediately on component mount
+);
 
 const blogQuery: QueryBuilderParams = {
   path: `/${locale.value}/blog`,
