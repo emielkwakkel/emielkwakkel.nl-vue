@@ -19,9 +19,11 @@
       </blockquote>
       <figcaption class="flex items-center justify-center mt-6 space-x-3">
         <NuxtImg
-          class="w-16 h-16 rounded-full"
+          class="rounded-full"
           :src="content.avatar"
           :alt="content.name"
+          width="64"
+          height="64"
         />
         <div
           class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700"
