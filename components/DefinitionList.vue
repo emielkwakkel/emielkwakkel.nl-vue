@@ -19,8 +19,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from "vue";
-
 type DefinitionItem = {
   title: string;
   description: string;
