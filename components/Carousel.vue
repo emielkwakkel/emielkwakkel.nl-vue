@@ -32,7 +32,7 @@
           </svg>
         </button>
         <!-- Carousel Content -->
-        <Testimonial :content="testimonials[currentIndex]" />
+        <slot :item="items[currentIndex]" />
 
         <!-- Next Button -->
         <button
@@ -108,32 +108,23 @@
 <script setup lang="ts">
 import { ref, computed } from "vue";
 
-type Testimonial = {
-  avatar: string;
-  function: string;
-  name: string;
-  organisation: string;
-  testimonial: string;
-};
-
 // Props
 const props = defineProps<{
-  testimonials: Testimonial[];
+  items: any[];
 }>();
 
 // State
 const currentIndex = ref(0);
-const totalTestimonials = computed(() => props.testimonials.length);
-const showButtons = computed(() => props.testimonials.length > 1);
+const totalItems = computed(() => props.items.length);
+const showButtons = computed(() => props.items.length > 1);
 
 // Handlers
 const next = () => {
-  currentIndex.value = (currentIndex.value + 1) % totalTestimonials.value;
+  currentIndex.value = (currentIndex.value + 1) % totalItems.value;
 };
 
 const prev = () => {
   currentIndex.value =
-    (currentIndex.value - 1 + totalTestimonials.value) %
-    totalTestimonials.value;
+    (currentIndex.value - 1 + totalItems.value) % totalItems.value;
 };
 </script>

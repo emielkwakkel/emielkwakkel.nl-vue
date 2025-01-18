@@ -63,7 +63,11 @@
       </ContentList>
     </Section>
     <Section :shade="false" :grid="false" v-if="testimonials?.length">
-      <TestimonialCarousel :testimonials="testimonials" />
+      <Carousel :items="testimonials">
+        <template #default="{ item }">
+          <Testimonial :content="item" />
+        </template>
+      </Carousel>
     </Section>
     <Section>
       <template v-slot:header>{{ $t("pages.home.latest-blogs") }}</template>
