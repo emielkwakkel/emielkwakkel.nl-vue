@@ -1,6 +1,11 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxtjs/i18n", "@nuxt/image"],
+  modules: [
+    "@nuxt/content",
+    "@nuxtjs/i18n",
+    "@nuxt/image",
+    "@nuxt/test-utils/module",
+  ],
   css: ["~/assets/css/styles.css"],
   nitro: {
     prerender: {
