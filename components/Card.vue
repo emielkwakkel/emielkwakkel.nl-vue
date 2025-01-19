@@ -1,6 +1,7 @@
 <template>
   <section
     class="w-full rounded-lg dark:text-white max-w-screen-md flex flex-col justify-between h-full"
+    v-if="card"
     :class="[
       shade ? 'dark:bg-gray-950 bg-gray-100' : 'dark:bg-gray-900 bg-white',
     ]"
@@ -60,6 +61,6 @@ interface Props {
 
 withDefaults(defineProps<Props>(), {
   shade: false,
-  card: {},
+  card: undefined,
 });
 </script>
