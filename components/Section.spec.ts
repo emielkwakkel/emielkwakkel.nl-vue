@@ -26,7 +26,7 @@ describe("Section.vue", () => {
   });
 
   describe("props", () => {
-    it("should make the background darker if prop `shade` is true", () => {
+    it("shade true should make the background darker", () => {
       const wrapper = mount(Section, {
         props: {
           shade: true,
@@ -36,7 +36,7 @@ describe("Section.vue", () => {
       expect(wrapper.classes()).toContain("bg-gray-100");
     });
 
-    it("should make the background lighter if prop `shade` is false", () => {
+    it("shade false should make the background lighter", () => {
       const wrapper = mount(Section, {
         props: {
           shade: false,
@@ -46,7 +46,7 @@ describe("Section.vue", () => {
       expect(wrapper.classes()).toContain("bg-white");
     });
 
-    it("should add a grid if prop `grid` is true", () => {
+    it("grid true should add a grid", () => {
       const wrapper = mount(Section, {
         props: {
           grid: true,
@@ -58,7 +58,7 @@ describe("Section.vue", () => {
       expect(wrapper.find(".container").classes()).toContain("gap-8");
     });
 
-    it("should not add a grid if prop `grid` is false", () => {
+    it("grid false should result in no grid", () => {
       const wrapper = mount(Section, {
         props: {
           grid: false,
