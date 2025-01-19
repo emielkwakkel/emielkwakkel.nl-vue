@@ -14,10 +14,12 @@
         <template v-if="index === 0">
           <a
             :href="link.to"
+            data-testid="link"
             class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
           >
             <svg
-              class="w-3 h-3 me-2.5 icon-home"
+              class="w-3 h-3 me-2.5"
+              data-testid="icon-home"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -33,7 +35,8 @@
         <template v-else>
           <div class="flex items-center">
             <svg
-              class="rtl:rotate-180 w-3 h-3 mx-1 text-gray-400 icon-chevron-right"
+              class="rtl:rotate-180 w-3 h-3 mx-1 text-gray-400"
+              data-testid="icon-chevron-right"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -50,6 +53,7 @@
             <template v-if="index < links.length - 1">
               <a
                 :href="link.to"
+                data-testid="link"
                 class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2 dark:text-gray-400 dark:hover:text-white"
                 >{{ link.label }}</a
               >
@@ -57,6 +61,7 @@
             <template v-else>
               <span
                 class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
+                data-testid="current-page"
                 >{{ link.label }}</span
               >
             </template>
