@@ -3,7 +3,7 @@ status: "PUBLISHED"
 title: "Rethinking Green Web Design"
 description: "My journey to a sustainable website started with a radical goal: minimize its carbon footprint at all costs. I succeeded, reducing emissions from 5 grams to just 0.06 grams of CO2 per pageview. But I realized that minimising to zero was not representative for real life projects. And even more: visitors needed more than plain text to connect with my content and mission."
 image: "/images/blog/price-of-impact/100-procent-green-web-design.jpg"
-date: 2025-01-10
+date: 2025-02-04
 head:
   meta:
     - name: "keywords"

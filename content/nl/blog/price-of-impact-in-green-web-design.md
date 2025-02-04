@@ -3,7 +3,7 @@ status: "PUBLISHED"
 title: "Green Webdesign in balans"
 description: "Mijn reis naar een duurzame website begon met een radicaal doel: de CO2-voetafdruk tot een minimum beperken. Dit lukte, waarbij ik de uitstoot van 5 gram terugbracht naar slechts 0,06 gram CO2 per paginabezoek. Tot ik mij realiseerde dat mijn ultraminimalistische site niet representatief was voor echte projecten. Nog belangrijker: bezoekers hebben meer nodig dan alleen platte tekst om zich te verbinden met mijn content en missie."
 image: "/images/blog/price-of-impact/100-procent-green-web-design.jpg"
-date: 2025-01-10
+date: 2025-02-04
 head:
   meta:
     - name: "keywords"

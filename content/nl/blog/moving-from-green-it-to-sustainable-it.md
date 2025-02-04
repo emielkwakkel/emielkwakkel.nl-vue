@@ -18,11 +18,11 @@ head:
 
 ## Waarom Green IT niet genoeg is en hoe we verder kunnen gaan
 
-Als ik aan duurzaamheid denk, is het niet alleen een abstract concept. Het gaat erom ervoor te zorgen dat toekomstige generaties, waaronder mijn eigen kinderen, een wereld erven waarin ze hun problemen kunnen oplossen zonder dat de middelen op raken. Daarom ben ik kritischer gaan nadenken over Sustainable IT.
+Als ik aan duurzaamheid denk, is het niet alleen een abstract concept. Het gaat erom ervoor te zorgen dat toekomstige generaties, waaronder mijn eigen kinderen, een wereld erven waarin ze hun problemen kunnen oplossen zonder dat de middelen op raken. Daarom ben ik kritischer gaan nadenken over duurzaamheid in de IT sector.
 
 ## Green IT is niet het eindpunt
 
-Green IT is voor veel organisaties het uitgangspunt geweest. De focus ligt vaak op het verminderen van de koolstofemissies door energie-efficiëntere hardware en software. Bijvoorbeeld, het optimaliseren van het energieverbruik in datacenters of het gebruik van cloud-diensten in regio's met hernieuwbare energiebronnen. Deze benadering werkt—tot op zekere hoogte.
+Green IT is voor veel organisaties het uitgangspunt geweest. De focus ligt vaak op het verminderen van de koolstofemissies door energie-efficiëntere hardware en software. Bijvoorbeeld, het optimaliseren van het energieverbruik in datacenters of het gebruik van cloud-diensten in regio's met hernieuwbare energiebronnen. Deze benadering werkt, tot op zekere hoogte.
 
 ![William Stanley Jevons](/images/blog/moving-from-green-it-to-sustainable-it/william-stanley-jevons.jpg)
 
@@ -32,7 +32,7 @@ Deze paradox toont ons aan dat Green IT alleen niet voldoende is. Het vermindere
 
 ## Denken in Systemen: Van Duurzaam naar Circulair
 
-Om verder te gaan dan Green IT, moeten we ons richten op **Sustainable IT**. Dit betekent systemen ontwerpen met een breder perspectief—afval verminderen, langetermijnefficiëntie verbeteren en heroverwegen hoe middelen worden geconsumeerd. Het gaat om het balanceren van energie-efficiëntie met het verminderen van afval en het hergebruik van middelen.
+Om verder te gaan dan Green IT, moeten we ons richten op **Sustainable IT**. Dit betekent systemen ontwerpen met een breder perspectief: afval verminderen, langetermijnefficiëntie verbeteren en heroverwegen hoe middelen worden geconsumeerd. Het gaat om het balanceren van energie-efficiëntie met het verminderen van afval en het hergebruik van middelen.
 
 Beter nog, we kunnen streven naar **Circulaire IT**. Deze benadering neemt principes over van de Circulaire Economie, met de nadruk op hergebruik, refurbishing en recycling. In plaats van verouderde hardware weg te gooien, kan het refurbished en hergebruikt worden om de levensduur te verlengen en de vraag naar nieuwe materialen te verminderen. Hetzelfde geldt voor software—door systemen modulair en onderhoudbaar te bouwen, kunnen ze gemakkelijker worden aangepast en uitgebreid in plaats van vervangen.
 

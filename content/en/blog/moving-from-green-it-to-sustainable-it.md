@@ -18,11 +18,13 @@ head:
 
 ## Why Green IT is not enough and how to move forward
 
-When I think about sustainability, it’s not just an abstract concept. It’s about making sure that future generations—including my own kids—inherit a world where they can solve their problems without running out of resources. That’s why I’ve started to think more critically about Sustainable IT.
+When I think about sustainability, it’s not just an abstract concept. It’s about making sure that future generations, including my own kids, inherit a world where they can solve their problems without running out of resources. That’s why I’ve started to think more critically about sustainable in the IT industry.
 
 ## Green IT isn’t the finish line
 
-Green IT has been the starting point for many organizations. The focus is often on reducing carbon emissions through more energy-efficient hardware and software. For example, optimizing data center energy usage, or using cloud services in regions with renewable energy sources. This approach works—up to a point.
+Green IT has been the starting point for many organizations. The focus is often on reducing carbon emissions through more energy-efficient hardware and software. For example, optimizing data center energy usage, or using cloud services in regions with renewable energy sources. This approach works, up to a point.
+
+![William Stanley Jevons](/images/blog/moving-from-green-it-to-sustainable-it/william-stanley-jevons.jpg)
 
 But Green IT can be a trap if it’s the only goal. Efficiency alone doesn’t guarantee sustainability. That’s where the **Jevons Paradox** comes in. Efficiency improvements often lower costs, making technology more accessible and increasing its usage. This can actually result in greater resource consumption overall. A good example is the rapid adoption of generative AI. As models became more efficient and accessible, their popularity surged, and the energy required to train and run these systems exploded.
 
@@ -30,7 +32,7 @@ This paradox shows us that Green IT alone won’t solve the problem. Reducing em
 
 ## Thinking in systems: From Sustainable to Circular
 
-To move beyond Green IT, we need to focus on **Sustainable IT**. This means designing systems with a broader perspective—reducing waste, improving long-term efficiency, and rethinking how resources are consumed. It’s about balancing energy efficiency with the reduction of waste and the reuse of resources.
+To move beyond Green IT, we need to focus on **Sustainable IT**. This means designing systems with a broader perspective: reducing waste, improving long-term efficiency, and rethinking how resources are consumed. It’s about balancing energy efficiency with the reduction of waste and the reuse of resources.
 
 Even better, we can aim for **Circular IT**. This approach adopts principles from the Circular Economy, emphasizing reuse, refurbishment, and recycling. For instance, instead of discarding outdated hardware, refurbishing and repurposing it can extend its lifecycle and reduce the demand for new materials. The same applies to software—building systems that are modular and maintainable makes them easier to adapt and extend rather than replace.
 
