@@ -60,10 +60,6 @@ export default defineNuxtConfig({
         },
         { property: "og:image:alt", content: "Website of Emiel Kwakkel" },
         {
-          property: "twitter:image",
-          content: "https://emielkwakkel.nl/og-image.jpg",
-        },
-        {
           property: "og:description",
           content:
             "My mission is to promote Sustainable IT for a greener world",
