@@ -51,10 +51,12 @@ export default defineNuxtConfig({
           media: "(prefers-color-scheme: light)",
         },
         {
+          name: "image",
           property: "og:image",
           content: "https://emielkwakkel.nl/og-image.jpg",
         },
         {
+          name: "image",
           property: "og:image:url",
           content: "https://emielkwakkel.nl/og-image.jpg",
         },

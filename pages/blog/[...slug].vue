@@ -59,10 +59,12 @@ useHead({
     { property: "og:title", content: data.value?.title },
     { property: "og:description", content: data.value?.description },
     {
+      name: "image",
       property: "og:image",
       content: `http://localhost:3000/_ipx/q_80${data.value?.image}`,
     },
     {
+      name: "image",
       property: "og:image:url",
       content: `http://localhost:3000/_ipx/q_80${data.value?.image}`,
     },
