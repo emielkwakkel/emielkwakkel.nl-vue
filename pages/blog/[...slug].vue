@@ -53,6 +53,19 @@ const { data } = await useAsyncData("currentPageContent", () =>
   queryContent(route.path).findOne(),
 );
 
+useHead({
+  title: data.value?.title,
+  meta: [
+    { property: "og:title", content: data.value?.title },
+    { property: "og:description", content: data.value?.description },
+    {
+      property: "og:image:url",
+      content: `http://localhost:3000/_ipx/q_80${data.value?.image}`,
+    },
+    { property: "og:image:alt", content: data.value?.title },
+  ],
+});
+
 const links = [
   {
     label: "Home",
